@@ -1,0 +1,2570 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tân Hồng IT</title>
+	<atom:link href="https://tanhongit.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://tanhongit.com</link>
+	<description>Kiến thức tin học, máy tính, lập trình, thủ thuật tiện ích</description>
+	<lastBuildDate>Mon, 09 Mar 2020 03:45:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>https://tanhongit.com/wp-content/uploads/2020/02/favicon-tanhongit.png</url>
+	<title>Tân Hồng IT</title>
+	<link>https://tanhongit.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Cách làm việc với code của người khác</title>
+		<link>https://tanhongit.com/cach-lam-viec-voi-code-cua-nguoi-khac/</link>
+				<comments>https://tanhongit.com/cach-lam-viec-voi-code-cua-nguoi-khac/#respond</comments>
+				<pubDate>Mon, 09 Mar 2020 03:41:49 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2525</guid>
+				<description><![CDATA[<p>Xem code hay làm việc với code của người khác là một kỹ năng cơ bản của developer. Dành thời gian tìm hiểu và code đó thậm chí có thể trở thành của riêng bạn. Hôm nay tôi sẽ xem xét một số phương pháp tốt nhất để làm việc với code của người khác, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/cach-lam-viec-voi-code-cua-nguoi-khac/">Cách làm việc với code của người khác</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Xem code hay làm việc với code của người khác là một kỹ năng cơ bản của developer. Dành thời gian tìm hiểu và code đó thậm chí có thể trở thành của riêng bạn.</p>
+<p>Hôm nay tôi sẽ xem xét một số phương pháp tốt nhất để làm việc với code của người khác, đọc code di sản (legacy) một cách hiệu quả. Đây không phải là một chủ đề dễ dàng để viết đầy đủ.</p>
+<figure id="attachment_2529" aria-describedby="caption-attachment-2529" style="width: 583px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/03/lam-viec-code-nguoi-khac.png"><img class="size-full wp-image-2529" src="https://tanhongit.com/wp-content/uploads/2020/03/lam-viec-code-nguoi-khac.png" alt="lam viec code nguoi khac" width="583" height="334" srcset="https://tanhongit.com/wp-content/uploads/2020/03/lam-viec-code-nguoi-khac.png 583w, https://tanhongit.com/wp-content/uploads/2020/03/lam-viec-code-nguoi-khac-300x172.png 300w" sizes="(max-width: 583px) 100vw, 583px" /></a><figcaption id="caption-attachment-2529" class="wp-caption-text">Cách làm việc với code của người khác</figcaption></figure>
+<p>Để làm cho quá trình làm việc với code của người khác dễ thở hơn, tôi tập trung vào các mục chính sau:</p>
+<ul>
+<li>Tương tác</li>
+<li>Quan sát</li>
+<li>Chạy thử nghiệm &#8211; Test</li>
+<li>Fix Bugs thiết kế dành cho người mới</li>
+<li>Tìm Tài nguyên sẵn có</li>
+<li>Sử dụng một IDE tốt</li>
+<li>Đọc sách &amp; Blogs</li>
+<li>Đóng góp Tài liệu</li>
+<li>Hãy cẩn trọng</li>
+</ul>
+<h2 id="_tuong-tac-0"><span id="tuong-tac" class="ez-toc-section"><strong>Tương tác</strong></span></h2>
+<p>Các lead developer là ai? Họ ở đâu? Có phải họ có mặt trực tiếp trong văn phòng của bạn? Nếu vậy, hãy nói chuyện với họ hoặc gửi email cho họ. Những người này hẳn là có kiến thức tốt nhất về dự án.</p>
+<p>Bạn có phải là nhân viên làm việc từ xa (remote) hoặc freelancer? Công ty hoặc dự án có các kênh thông tin liên lạc không? Các developer dùng IRC, Slack, Twitter, email, Trello hay cái gì khác?</p>
+<p>Hãy chắc chắn rằng bạn đang cùng nơi với họ. Một chỉ trích thường nhằm vào Zend Framework 2 là không có cộng đồng năng động. Không hẳn vậy, vì kênh IRC của họ đang hoạt động hàng ngày. Hãy đảm bảo bạn đang sinh hoạt cùng chỗ với các developer và các thành viên khác trong team.</p>
+<h2 id="_quan-sat-1"><span id="quan-sat" class="ez-toc-section"><strong>Quan sát</strong></span></h2>
+<p>Khi bạn lần đầu vào một dự án, đừng quá khắt khe với bản thân. Đừng mong đợi biết được tất cả mọi thứ ngay từ đầu. Tôi từng nghe nói về chuyện mất ba tuần đến ba tháng làm việc hàng ngày với codebase (code nền tảng đã có sẵn) trước khi một developer có thể thực sự làm việc hiệu quả với codebase đó.</p>
+<p>Một số người có quan niệm sai lầm rằng bạn có thể, bằng cách nào đó, chỉ cần nhảy vào và ngay lập tức làm việc hiệu quả. Có lẽ họ đã xem quá nhiều phim của Hollywood như Swordfish.</p>
+<p>Các codebase mất thời gian để học vì chúng được xây dựng từ những <em>ý tưởng, định kiến, niềm tin và cách tiếp cận</em> của tất cả các developer làm việc trong dự án. Vì bạn là người mới, bạn sẽ không có bất kỳ kiến thức nền nào cả.</p>
+<p>Dưới đây là 5 cách hay để bắt đầu:</p>
+<ul>
+<li>Dành thời gian xem lướt qua mọi thứ</li>
+<li>Đặt câu hỏi</li>
+<li>Cài đặt thử</li>
+<li>Thử sử dụng cái vừa cài đặt thử</li>
+<li>Đọc qua các comment trong code và các tài liệu liên quan</li>
+</ul>
+<p>Đừng khắt khe với bản thân, hãy cho mình cơ hội để có được một sự khởi đầu tốt. Sau một thời gian, bạn sẽ bắt đầu hiểu rõ hơn về cách ứng dụng được xây dựng.</p>
+<p>Tại giai đoạn này, hãy tiến nhanh hơn bằng cách hỏi các developer khác và các senior developer. Bạn hẳn đã có một danh sách các câu hỏi khi bạn lướt qua codebase.</p>
+<p>Hãy dành thời gian ra để hỏi các developer khác lời giải thích cho các khúc mắc của bạn. Đừng e ngại, hãy hành động và nhận được câu trả lời mà bạn cần.</p>
+<h2 id="_chay-test-2"><span id="chay-test" class="ez-toc-section"><strong>Chạy Test</strong></span></h2>
+<p><img class="medium-zoom-image" src="https://viblo.asia/uploads/2e2070d5-260f-4e05-8986-baad73820986.png" alt="1411369515running-phpunit-1024x649.png" /></p>
+<p>Bất kỳ codebase tốt nào đều có các test. Nếu không thì thật không hay. Thực ra có thể là các developer team này chưa bao giờ thực hiện test, nhưng tôi sẽ hơi quan ngại nếu họ không làm điều này.</p>
+<p>Nếu có test, hãy chạy thử. Có pass hết không? Tôi đã gặp nhiều codebase có một bộ các test mà không ai có thể chạy qua được. Liệu chúng đã được cập nhật chưa?</p>
+<p>Sau khi bạn đã thử chạy chúng, hãy đọc. Nếu chúng được viết tốt, chúng sẽ mô tả cách ứng dụng làm việc, nó sẽ làm gì, và các thành phần kết dính với nhau như thế nào. Sẽ mất thời gian để đi sâu vào những thứ này.</p>
+<h2 id="_fix-bugs-thiet-ke-cho-nguoi-moi-3"><span id="fix-bugs-thiet-ke-cho-nguoi-moi" class="ez-toc-section"><strong>Fix Bugs thiết kế cho người mới</strong></span></h2>
+<p>Một cách dễ dàng để bắt đầu là tìm hiểu tại sao xuất hiện bug và fix các bug dành cho người mới hoặc junior developer trong dự án. Hai ví dụ tốt là Joind.In và ownCloud, trong hình dưới đây là bug tracker của ownCloud:</p>
+<p><img class="medium-zoom-image" src="https://viblo.asia/uploads/5037534d-002a-44e7-8ccb-41beb905cd78.png" alt="1411369550owncloud-1024x732.png" /></p>
+<p>Bạn có thể thấy các ticket đã được đánh dấu rõ ràng. Hãy đọc qua và tham gia fix chúng. Những bug này không đòi hỏi quá cao về kỹ thuật, nhưng bạn sẽ có thể dễ dàng hòa mình vào dự án, xây dựng sự tự tin và kiến thức.</p>
+<p>Thành tựu và kỹ thuật phức tạp thì rất tuyệt vời, nhưng nếu hiện tại không đạt được ngay hoặc sẽ mất rất nhiều thời gian, chúng sẽ không giúp gì cho sự tự tin và nhiệt huyết của bạn. Hãy bắt đầu từ những cái dễ và nhỏ.</p>
+<div>
+<h2 id="_tim-tai-nguyen-san-co-4"><span id="tim-tai-nguyen-san-co" class="ez-toc-section"><strong>Tìm tài nguyên sẵn có</strong></span></h2>
+<p>Một trong những điều tốt nhất bạn có thể làm khi tiếp quản một codebase, hoặc khi tham gia vào một team hiện có, là tập hợp được nhiều tài nguyên nhất có thể. Không biết cần tìm gì ư? Dưới đây là một số ý tưởng để giúp bạn bắt đầu:</p>
+<ul>
+<li>Bạn có quyền truy cập vào kho lưu trữ mail không?</li>
+<li>Dự án hoặc công ty có wiki không?</li>
+<li>Tài liệu dự án nào đã được biên soạn?</li>
+<li>Bạn đã đọc qua <a href="https://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History" target="_blank" rel="noopener noreferrer nofollow" data-wpel-link="external">version control history</a> chưa?</li>
+<li>Những người đóng góp có viết các <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener noreferrer nofollow" data-wpel-link="external">commit message có ý nghĩa</a> và nhất quán không?</li>
+</ul>
+<h2 id="_su-dung-mot-ide-tot-5"><span id="su-dung-mot-ide-tot" class="ez-toc-section"><strong>Sử dụng một IDE tốt</strong></span></h2>
+<p><img class="medium-zoom-image" src="https://viblo.asia/uploads/8da8db56-43a9-40de-bdd1-5e56c65cdae1.png" alt="1411369591phpstorm-syntax-highlighting-1024x794.png" /></p>
+<p>IDE tốt thì quý như vàng. Dù bạn là một developer Ruby<em>, Python, Go, Java, PHP</em> hay ngôn ngữ nào khác, hãy tìm một IDE tốt dành riêng hoặc tùy chỉnh cho ngôn ngữ bạn lựa chọn.</p>
+<p>Tôi đánh giá cao những người theo chủ nghĩa thuần túy, thích VIM hoặc Emacs, điều đó OK thôi. Nhưng tôi là một người yêu IDE và IDE mà tôi lựa chọn là PhpStorm. Có rất nhiều những lựa chọn khác, chẳng hạn như Eclipse, TextMate, SublimeText, và VisualStudio.</p>
+<p>Một khi bạn đã tìm thấy IDE cho mình, hãy bắt đầu sử dụng các tính năng nó cung cấp. Ở đây tôi lấy ví dụ cho PhpStorm, bạn có thể áp dụng những nguyên tắc này cho IDE bạn chọn.</p>
+<p>Bắt đầu duyệt qua code và xem nó có theo một chuẩn nào không. Không nhất thiết phải là một chuẩn chính thức như PHP PSRs. Xem thử liệu developer có theo một phong cách nhất quán không hay là lộn xộn. Sử dụng các công cụ như mess detector và cyclomatic complexity tester để đánh giá chất lượng code.</p>
+<p>Có tài liệu hướng dẫn nào không? Nếu có thì IDE của bạn sẽ có thể sử dụng chúng khi bạn kiểm tra code. Tiếp theo, sử dụng một trình gỡ lỗi (debugger), chẳng hạn như xhprof, Xdebug hoặc Zend Debugger, rồi chạy ứng dụng xem nó hoạt động như thế nào.</p>
+<p>Nó làm gì? Cấu trúc dữ liệu nào nó tạo ra và sử dụng? Nó có lặp lại các khối code không cần thiết không? Có nhiều thứ hơn nữa cần xem xét, nhưng sử dụng các tính năng mà IDE cung cấp sẽ giúp bạn dễ thở hơn nhiều.</p>
+<h2 id="_doc-va-hoc-hoi-6"><span id="doc-va-hoc-hoi" class="ez-toc-section"><strong>Đọc và Học hỏi</strong></span></h2>
+<p>Điều này đúng cho cá nhân tôi. Càng học hỏi nhiều, chúng ta càng trở nên khôn lớn và làm được việc. Chúng ta không phải là người đầu tiên trên con đường chúng ta đang đi. Nhiều, rất nhiều những người khác đã đi trước chúng ta và đã mắc những lỗi tương tự như chúng ta.</p>
+<p>Hãy tiết kiệm cho mình một chút thời gian khi nghĩ về quá trình học tập khó khăn của những người đi trước và học hỏi từ họ. Nhiều developer giỏi cũng vừa là các tác giả viết sách và các blogger.</p>
+<p>Một trong những tác giả yêu thích của tôi là Martin Fowler, người đã xuất bản một cuốn sách tuyệt vời về chủ đề tái cấu trúc (refactoring). Cũng có những cuốn sách khác rất tuyệt vời, chẳng hạn như Design Patterns, và các trang web như SourceMaking.com.</p>
+<p>Tự tìm hiểu và tiếp tục học hỏi từ các nguồn tài nguyên như vậy. Nó không hề dễ dàng, nhưng phần thưởng là rất xứng đáng.</p>
+<h2 id="_dong-gop-tai-lieu-7"><span id="dong-gop-tai-lieu" class="ez-toc-section"><strong>Đóng góp Tài liệu</strong></span></h2>
+<p>Đây là một trong những điều mà tôi không làm đủ. Thật dễ dàng khi ngồi ngoài và chỉ trích một codebase, framework hay dự án phần mềm. Thay vì làm điều đó, hãy bắt tay vào tham gia đóng góp.</p>
+<p>Tài liệu không phải là dành cho các lập trình viên thất bại, các nhà thiết kế đồ họa hay những người không am hiểu kỹ thuật. Các dự án phần mềm lớn nhất luôn đề xuất rằng nơi tốt nhất để bắt đầu là tài liệu hướng dẫn.</p>
+<p>Một trong những dự án nổi bật nhất mà thực hiện điều này là Linux Kernel. Còn cách nào tốt hơn để học một cái gì đó hơn là tài liệu? Sau tất cả, nếu bạn thực sự biết điều gì đó thì bạn mới có thể làm tài liệu về nó.</p>
+<p>Vì vậy, nếu là một dự án mã nguồn mở, hãy nhảy vào, tìm hiểu về nó, đọc qua code, ghi chép lại, và sau đó đóng góp tài liệu. Nếu đó là một ứng dụng nội bộ, hãy là người đầu tiên bắt đầu làm tài liệu; thậm chí nếu không có ai khác ngoài bạn.</p>
+<p>Có thể sẽ không có tài liệu; nhưng điều đó thật sự khủng khiếp. Mọi dự án đều phải bắt đầu từ một nơi nào đó. Khi bạn làm việc với code, hãy viết ra những gì bạn biết.</p>
+<p>Những developer giỏi nhất mà tôi biết, ví dụ như Lorna Jane, bắt đầu viết blog theo cách này. Cô viết blog để lưu giữ những gì đã học được, mà sau này trở thành một trong những blog PHP phổ biến nhất.</p>
+<h2 id="_hay-can-trong-8"><span id="hay-can-trong" class="ez-toc-section"><strong>Hãy cẩn trọng</strong></span></h2>
+<p>Điểm cuối cùng: Hãy suy nghĩ cẩn trọng đối với các developer mà bạn đang xem và làm việc trên di sản của họ. Bạn không biết về sự nghiệp và trình độ học vấn của họ, và những thứ này đã hạn chế họ như thế nào, khi họ viết ra những dòng code mà bạn đang đọc.</p>
+<p>Hơn nữa, level kĩ năng hiện tại của bạn đang ở mức nào? Sẽ là tùy tiện khi chúng ta trẻ hơn, non hơn, và ít kinh nghiệm, lại đi phán xét người khác.</p>
+<p>Chúng ta nghĩ rằng chúng ta biết tất cả và những kỳ vọng, những khái niệm và phương pháp tiếp cận của chúng ta là những cách đúng và chính xác. Nhưng có thực sự đúng là như vậy không? Tôi tin rằng, khi chúng ta trưởng thành và lớn hơn một chút, chúng ta cũng trở nên khôn ngoan hơn và chấp nhận vô vàn các phương pháp tiếp cận phát triển phần mềm mà đã từng tồn tại.</p>
+<p>Chúng ta có thể không cần phải đồng ý với họ, nhưng họ không hẳn là đã sai. Họ có thể có rất nhiều điều để dạy chúng ta, có thể giúp chúng ta lớn khôn. Vì vậy, hãy luôn cố gắng và suy nghĩ ân cần với những người khác và vị trí của họ. Đừng trở thành một người mới đáng ghét, chỉ ngón tay và đổ lỗi. Hành xử kiểu này sẽ không giúp ích cho bất kì ai, đặc biệt là chính bản thân bạn.</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">15: Session trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/" target="_blank" rel="noopener noreferrer">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/" target="_blank" rel="noopener noreferrer">Bài 18: Những hàm kiểm tra dữ liệu trong PHP (isset, em</a><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/" target="_blank" rel="noopener noreferrer">pty,&#8230;)</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/" target="_blank" rel="noopener noreferrer">Mô hình Client-Server là gì và cách hoạt động Client-Server</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/" target="_blank" rel="noopener noreferrer">Vai trò Apache và PHP Hoạt Động Cùng Nhau Như Thế Nào</a></strong></li>
+</ul>
+<p style="text-align: right;">via <a href="https://viblo.asia/p/lam-viec-voi-code-cua-nguoi-khac-DbmemWNOvAg" target="_blank" rel="noopener noreferrer">viblo</a> and <a href="https://www.sitepoint.com/work-peoples-code/" target="_blank" rel="noopener noreferrer">sitepoint</a></p>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+</div>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right kksr-disabled"
+    data-id="2525"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">1</strong>
+        <span class="kksr-muted">
+            vote        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/cach-lam-viec-voi-code-cua-nguoi-khac/">Cách làm việc với code của người khác</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/cach-lam-viec-voi-code-cua-nguoi-khac/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>PHP OOP &#8211; Bài 1: Lập trình hướng đối tượng trong PHP là gì?</title>
+		<link>https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/</link>
+				<comments>https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/#respond</comments>
+				<pubDate>Thu, 05 Mar 2020 11:51:25 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP OOP]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2499</guid>
+				<description><![CDATA[<p>Đây là bài viết mở đầu cho series học Lập trình PHP hướng đối tượng ( PHP OOP) của chúng ta và trong bài này chúng ta sẽ đi qua một số khái niệm về đối tượng và lập trình hướng đối tượng là gì, tìm hiểu về những ưu điểm của lập trình hướng [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/">PHP OOP &#8211; Bài 1: Lập trình hướng đối tượng trong PHP là gì?</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Đây là bài viết mở đầu cho series học Lập trình PHP hướng đối tượng (<strong> PHP OOP</strong>) của chúng ta và trong bài này chúng ta sẽ đi qua một số khái niệm về đối tượng và lập trình hướng đối tượng là gì, tìm hiểu về những ưu điểm của lập trình hướng đối tượng và một số khái niệm liên quan khác nằm trong chuyên đề này.</p>
+<h2><span style="color: #0000ff;"><strong>Vậy đối tượng ( object) là gì?</strong></span></h2>
+<p>Trong lập trình hướng đối tượng, đối tượng được hiểu như là 1 thực thể: người, vật hoặc 1 bảng dữ liệu, . . .</p>
+<p>Một đối tượng bao gồm 2 thông tin: thuộc tính và phương thức</p>
+<ul>
+<li><strong>Thuộc tính</strong> chính là những thông tin, đặc điểm của đối tượng. Ví dụ: một người sẽ có họ tên, ngày sinh, màu da, kiểu tóc, . . .</li>
+<li><strong>Phương thức</strong> là những thao tác, hành động mà đối tượng đó có thể thực hiện. Ví dụ: một người sẽ có thể thực hiện hành động nói, đi, ăn, uống, . . .</li>
+</ul>
+<h2><span style="color: #0000ff;"><strong>Lập trình hướng đối tượng là gì?</strong></span></h2>
+<p>Lập trình hướng đối tượng (<strong>Object-oriented programming &#8211; OOP</strong>)  là kiểu viết code sử dụng<strong> lớp (classes), quan hệ (relationships), thuộc tính (properties) và phương thức (methods) của đối tượng (objects)</strong> nhằm giảm thời gian viết code và giúp đơn giản hóa việc lập trình.</p>
+<p>OOP là kỹ thuật cho phép lập trình viên tạo ra các đối tượng trong code, từ đó trừu tượng hóa đối tượng thực tế trong cuộc sống. Hướng tiếp cận dựa trên lập trình đối tượng này là một trong những khuôn mẫu phát triển phần mềm, đặc biệt là phần mềm cho các doanh nghiệp.</p>
+<figure id="attachment_2515" aria-describedby="caption-attachment-2515" style="width: 700px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/03/lap-trinh-huong-doi-tuong-oop-php-la-gi.png"><img class="size-full wp-image-2515" src="https://tanhongit.com/wp-content/uploads/2020/03/lap-trinh-huong-doi-tuong-oop-php-la-gi.png" alt="lap trinh huong doi tuong oop php la gi" width="700" height="389" srcset="https://tanhongit.com/wp-content/uploads/2020/03/lap-trinh-huong-doi-tuong-oop-php-la-gi.png 700w, https://tanhongit.com/wp-content/uploads/2020/03/lap-trinh-huong-doi-tuong-oop-php-la-gi-300x167.png 300w" sizes="(max-width: 700px) 100vw, 700px" /></a><figcaption id="caption-attachment-2515" class="wp-caption-text">Lập trình hướng đối tượng trong PHP là gì?</figcaption></figure>
+<p>Đây là phương pháp lập trình <strong>hỗ trợ công nghệ đối tượng</strong> (OOP) giúp tăng năng xuất và đơn giản hóa công việc xây dựng phần mềm, bảo trì phần mềm, cho phép lập trình viên tập trung vào các đối tượng giống như trong thực tế.</p>
+<p>Thực tế khi làm một việc gì đó, chúng ta sẽ quan tâm đến hai điều: vật bị tác động và hành động. Với lập trình cũng vậy, nếu chúng ta tập trung vào hành động thì đó là lập trình hướng thủ tục còn nếu tập trung vào các vật thể hay đối tượng nào đó được tác động thì đó là lập trình hướng đối tượng.</p>
+<p>Ví dụ dưới đây sẽ mô tả về một ứng dụng lấy thông tin của học sinh theo 2 phương pháp lập trình hướng thủ tục và lập trình hướng đối tượng.</p>
+<p><strong>Phương pháp lập trình theo hướng thủ tục:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+function getPersonnel()
+{
+    $name = 'Nguyen Minh Man';
+    $age = 18;
+    $class = '12A1';
+    return $name . '-' . $age . '-' . $class;
+}
+echo getPersonnel();</pre>
+<p><strong>Phương pháp lập trình theo hướng đối tượng OOP</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+//tạo  class User
+class User
+{
+    public  $name = "Nguyen Minh Man";
+    private $age;
+    protected $class;
+    private $info;
+
+    public function setUser($age, $class)
+    {
+        $this-&gt;age = $age;
+        $this-&gt;class = $class;
+        $this-&gt;getPersonnel();
+    }
+    protected function getPersonnel()
+    {
+        return $this-&gt;info = $this-&gt;name . ' is ' . $this-&gt;age . ' years old' . ' of ' . $this-&gt;class;
+    }
+
+    public function getInfo()
+    {
+        return $this-&gt;info;
+    }
+}
+$user = new User(); //tạo một đối tượng mới từ class User
+
+$user-&gt;setUser(18, '12A1');
+echo $user-&gt;getInfo();
+?&gt;</pre>
+<p>Các bạn nhìn thấy mặc dù từ ví dụ trên ta thấy code theo phương pháp lập trình hướng đối tượng nó dài hơn, tuy nhiên, sau khi các bạn học kiến thức đầy đủ về phương pháp này bạn sẽ thấy công dụng của nó rất thuận lợi đối với một dự án lớn có các file được liên kết với nhau.</p>
+<p>Ví dụ như khi muốn thay đổi giá trị nào đó thì bạn chỉ cần thay đổi trong một hàm thành phần nhất định, toàn bộ mã nguồn của bạn khi này có các file được quan hệ với nhau sẽ đồng loại thay đổi theo.</p>
+<h2><span style="color: #0000ff;"><strong>Ưu điểm của lập trình hướng đối tượng OOP</strong></span></h2>
+<ul>
+<li>Dễ dàng quản lý code khi có sự thay đổi chương trình.  Thay vì việc thay đổi các mã nguồn của đối tượng mà giờ đây lập trình viên chỉ cần thay đổi một số hàm thành phần.</li>
+<li>Dễ mở rộng dự án.</li>
+<li>Tiết kiệm được tài nguyên đáng kể cho hệ thống.</li>
+<li>Có tính bảo mật cao.</li>
+<li>Có tính tái sử dụng cao.</li>
+<li>Phù hợp với thiệt lập cho những phần mềm phức tạp, phần mềm lớn.</li>
+</ul>
+<h2><span style="color: #0000ff;"><strong>Nhược điểm của lập trình hướng đối tượng OOP</strong></span></h2>
+<p>Lập trình hướng đối tượng OOP có nhượng điểm là có thể khiến dữ liệu được xử lý tách rời, khi cấu trúc dữ liệu thay đổi sẽ dẫn đến việc thuật toán bị thay đổi theo.</p>
+<h2><span style="color: #0000ff;"><strong>Những tính chất của lập trình hướng đối tượng OOP</strong></span></h2>
+<p>Lập trình hướng đối tượng có 4 tính chất:</p>
+<ul>
+<li>Abstraction &#8211; Tính trừu tượng.</li>
+<li>Inheritance &#8211; Tính kế thừa.</li>
+<li>Encapsulation &#8211; Tính đóng gói.</li>
+<li>Polymorphism &#8211; Tính đa hình.</li>
+</ul>
+<p>Về các tính chất trên mình sẽ nói chi tiết sau và các bạn sẽ được học qua các bài tiếp theo của series này nhé!</p>
+<p>Tham khảo:</p>
+<ul>
+<li><a href="https://viblo.asia/" target="_blank" rel="noopener noreferrer">https://viblo.asia/</a></li>
+<li><a href="https://freetuts.net/" target="_blank" rel="noopener noreferrer">https://freetuts.net/</a></li>
+</ul>
+<h2>Kết thúc</h2>
+<p>Qua bài học đầu tiên, mình đã giới thiệu cho các bạn khái niệm về lập trình hướng đối tương OOP và một số khái niệm khác cũng như những ưu và nhược điểm của nó. Mong các bạn sẽ phát triển hơn trong việc học tập của bản thân và tiếp tục đón những bài viết tiếp theo trong series học PHP nâng cao OOP &#8211; lập trình PHP hướng đối tượng nhé!</p>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-1-ngon-ngu-lap-trinh-php-la-gi-va-huong-dan-thiet-lap-moi-truong-de-lap-trinh-php/" target="_blank" rel="noopener noreferrer">Bài 1: Ngôn ngữ lập trình PHP là gì và hướng dẫn thiết lập môi trường để lập trình PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/" target="_blank" rel="noopener noreferrer">Lộ trình học PHP từ cơ bản đến nâng cao chuyên nghiệp</a></strong></li>
+</ul>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<div style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></div>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2499"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">2</strong>
+        <span class="kksr-muted">
+            votes        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/">PHP OOP &#8211; Bài 1: Lập trình hướng đối tượng trong PHP là gì?</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Lộ trình học PHP từ cơ bản đến nâng cao chuyên nghiệp</title>
+		<link>https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/</link>
+				<comments>https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/#respond</comments>
+				<pubDate>Thu, 27 Feb 2020 22:59:57 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Khoá Học]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2452</guid>
+				<description><![CDATA[<p>Các bạn đang muốn học lập trình Website? các bạn chưa biết nên bắt đầu từ đâu và các bạn chưa biết mình nên theo lập trình web phía Back-end hay Full-Stack như thế nào? Bài viết này sẽ cho các bạn  biết về lộ trình học lập trình website từ cơ bản đến nâng [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/">Lộ trình học PHP từ cơ bản đến nâng cao chuyên nghiệp</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Các bạn đang muốn học lập trình Website? các bạn chưa biết nên bắt đầu từ đâu và các bạn chưa biết mình nên theo lập trình web phía Back-end hay Full-Stack như thế nào? Bài viết này sẽ cho các bạn  biết về lộ trình học lập trình website từ cơ bản đến nâng cao với ngôn ngữ chủ đạo là PHP.</p>
+<figure id="attachment_2464" aria-describedby="caption-attachment-2464" style="width: 718px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/lo-trinh-hoc-php.png"><img class="size-full wp-image-2464" src="https://tanhongit.com/wp-content/uploads/2020/02/lo-trinh-hoc-php.png" alt="lo trinh hoc php" width="718" height="406" srcset="https://tanhongit.com/wp-content/uploads/2020/02/lo-trinh-hoc-php.png 718w, https://tanhongit.com/wp-content/uploads/2020/02/lo-trinh-hoc-php-300x170.png 300w" sizes="(max-width: 718px) 100vw, 718px" /></a><figcaption id="caption-attachment-2464" class="wp-caption-text">Lộ trình học PHP từ căn bản đến nâng cao</figcaption></figure>
+<h2><span style="color: #0000ff;"><strong>Tìm hiểu sơ qua về ngôn ngữ PHP</strong></span></h2>
+<p><strong>PHP </strong>là ngôn ngữ kịch bản phổ biến nhất trên website hiện nay. Nó được viết tắt của <strong>“Hypertext Preprocessor” </strong>là một ngôn ngữ lập trình mã nguồn mở được chạy ở phía server nhằm sinh ra mã html trên client rất phổ biến và được dùng trong phát triển ứng dụng Website.</p>
+<p>Với đặt tính nhanh, linh hoạt, hữu dụng trong thực tế và được tối ưu hoá qua nhiều phiên bản, dễ học nên <strong>PHP</strong> trở thành một ngôn ngữ lập trình web rất phổ biến và được ưa chuộng để phát triển mọi ứng dụng web từ blog đến các website nối tiếng.</p>
+<p>Ví dụ như các ông lớn Facebook, Yahoo, Google đều ứng dụng với ngôn ngữ này.</p>
+<p>Vậy trước khi bắt tay vào học ngôn ngữ PHP, chúng ta có cần có trước những kiến thức cơ bản nào khác không. Đáp án đối với bản thân mình là nên có.</p>
+<p>Mặc dù chúng ta có thể bắt tay vào học PHP ngay cũng được, nhưng bạn sẽ gặp rất nhiều trở ngại trong quá trình học. Cho nên dù không nhiều thì ít, các bạn vẫn nên chuẩn bị cho bản thân một số kiến thức dưới đây trước khi học PHP.</p>
+<h2><span style="color: #0000ff;"><strong>Kiến thức nên có trước khi bắt đầu học lập trình PHP</strong></span></h2>
+<h3><strong>Học html cơ bản</strong></h3>
+<p>HTML là ngôn ngữ đánh dấu siêu văn bản giúp cho bạn tạo khung xương của website</p>
+<p>Bạn nên học qua về HTML, HTML5</p>
+<h3><strong>Học CSS cơ bản</strong></h3>
+<p>Bạn nên học CSS, CSS3, Bootstrap sẽ giúp bạn trang trí cho website thêm phần sinh động.</p>
+<h3><strong>Học Javascript</strong></h3>
+<p>Có Javascript sẽ giúp cho website trở nên tương tác hơn.</p>
+<ul>
+<li>Javasript cơ bản</li>
+<li>jQuery: Thư viện hiệu ứng của Javascript</li>
+</ul>
+<p>Với bộ 3 HTML + CSS + Javascript này bạn đã trở thành một lập trình viên front-end có đủ kiến thức rồi. Học xong 3 phần trên, các bạn sẽ rất dễ nắm bắt những công nghệ mới khi tiếp xúc sau này.</p>
+<h3><strong>Học MySQL</strong></h3>
+<p>Database là một phần không thể thiếu của bất cứ ứng dụng nào. Nó là thứ để lưu trữ các dữ liệu của ứng dụng và người dùng. Trong PHP thì người ta thường ưa chuộng MySQL.</p>
+<p>Vì thế bạn nên học MySQL để biết về cách tạo dựng và quản lý database như thế nào nhé!</p>
+<p>Giờ hãy bắt đầu vào lộ trình học PHP căn bản đến nâng cao.</p>
+<h2><span style="color: #0000ff;"><strong>Lộ trình học PHP căn bản</strong></span></h2>
+<p><strong>Ta sẽ học về lý thuyết những kiến thức cơ bản nhất.</strong></p>
+<ol>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-1-ngon-ngu-lap-trinh-php-la-gi-va-huong-dan-thiet-lap-moi-truong-de-lap-trinh-php/" target="_blank" rel="noopener noreferrer">Ngôn ngữ lập trình PHP là gì và hướng dẫn thiết lập môi trường để lập trình PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-2-cu-phap-trong-php-khai-bao-hang-va-bien-trong-php/" target="_blank" rel="noopener noreferrer">Cú pháp trong PHP, Khai báo hằng và biến trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-3-nhung-kieu-du-lieu-trong-php/" target="_blank" rel="noopener noreferrer">Những kiểu dữ liệu trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/toan-tu-va-bieu-thuc-trong-php/" target="_blank" rel="noopener noreferrer">Toán tử và biểu thức trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bieu-thuc-dieu-kien-trong-php-lenh-if-else-switch/" target="_blank" rel="noopener noreferrer">Biểu Thức Điều Kiện Trong PHP (Lệnh if, else, switch)</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-6-cac-loai-vong-lap-trong-php-for-while-do-while/" target="_blank" rel="noopener noreferrer">Các loại Vòng lặp trong PHP (for, while, do while)</a></strong></li>
+<li><strong><a href="https://tanhongit.com/vong-lap-foreach-trong-php/" target="_blank" rel="noopener noreferrer">Vòng lặp Foreach trong PHP (Các loại vòng lặp phần 2)</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-8-lenh-break-continue-va-cac-ham-function-exit-die-thuong-dung-trong-php/" target="_blank" rel="noopener noreferrer">lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP</a></strong></li>
+<li><a href="https://tanhongit.com/bai-9-ham-function-trong-php/" target="_blank" rel="noopener noreferrer"><strong>Hàm (Function) Trong PHP</strong></a></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Mảng (Array) Trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer"> Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+</ol>
+<p><strong>Học PHP nâng cao thêm một chút nữa</strong></p>
+<ol>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">Session trong PHP</a></strong></li>
+<li><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/" target="_blank" rel="noopener noreferrer"><strong>Các hàm xử lý và làm việc với file trong PHP</strong></a></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/" target="_blank" rel="noopener noreferrer">Xử lý date time ngày tháng trong PHP</a></strong></li>
+<li><a href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/" target="_blank" rel="noopener noreferrer"><strong>Những hàm kiểm tra dữ liệu trong PHP (isset, empty,…)</strong></a></li>
+<li><strong><a href="https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/" target="_blank" rel="noopener noreferrer">Xử lý ngoại lệ trong PHP.</a></strong></li>
+<li><strong><a href="https://tanhongit.com/xy-ly-loi-error-trong-php/" target="_blank" rel="noopener noreferrer">Xử lý lỗi (Error) trong PHP</a></strong></li>
+<li>Những lệnh require, require_once, include, include_once trong PHP</li>
+</ol>
+<p><strong>Tiếp sau đó bạn sẽ cần học về Form trong php, truyền dữ liệu trong php từ form và kiểm tra form nhập liệu.</strong></p>
+<p><strong>Gửi Emaill trong PHP.</strong></p>
+<p><strong>Học cách sử dụng XML, DOM, Parsers trong PHP.</strong></p>
+<p><strong>Các hàm bảo mật trong PHP</strong></p>
+<h2><strong><span style="color: #0000ff;">Học PHP nâng cao &#8211; Lập trình PHP hướng đối tượng OOP</span></strong></h2>
+<p>Trong Phần học PHP nâng cao, Nội dung quan trọng nhất là Lập trình hướng đối tương OOP, nên ta sẽ có từng bài học theo lộ trình sau:</p>
+<ol>
+<li><strong><a href="https://tanhongit.com/lap-trinh-huong-doi-tuong-trong-php-la-gi/" target="_blank" rel="noopener noreferrer">Lập trình hướng đối tượng là gì?</a></strong></li>
+<li>Class, properties, method of Object</li>
+<li>Magic methords</li>
+<li>Trừu tượng hoá dữ liệu</li>
+<li>Hàm khởi tạo và huỷ trong PHP</li>
+<li>Biến có sẵn được định nghĩa trước trong PHP</li>
+<li>Tính kế thừa trong php</li>
+<li>Các mức truy cập visibility private protected và public trong kế thừa</li>
+<li>Kế thừa lồng nhau trong php</li>
+<li>Tính đóng gói và đa hình trong php</li>
+<li>Lớp trừu tượng abstract trong php hướng đối tượng</li>
+<li>Get set và magics methods __get __set</li>
+<li>Autoloading require, require_one</li>
+<li>Ghi chú với docblocks</li>
+<li>Interface là gì?</li>
+<li>Trait là gì?</li>
+<li>Self và this khác nhau như thế nào?</li>
+<li>Final class là gì?</li>
+</ol>
+<h2><span style="color: #0000ff;"><strong>Nâng cao thêm &#8211; Học PHP và MySQL</strong></span></h2>
+<p>Để học tốt chương trình học PHP và MySQL, chúng ta phải nắm vững kiến thức về lập trình frontend, bao gồm HTML, CSS, và Javascript. Tư duy logic tốt, khả năng xử lý vấn đề thực tiễn, khả năng tìm hiểu tài liệu, và ngoại ngữ sẽ là một lợi thế.</p>
+<ol>
+<li>MySQL là gì?</li>
+<li>Mối liên hệ giữa MySQL và PHP</li>
+<li>Tạo CSDL</li>
+<li>Tạo Bảng (table)</li>
+<li>Kết nối và truy vấn CSDL MySQL</li>
+<li>Thiết lập quan hệ giữa các bảng trong CSDL (khóa chính, khóa ngoại, contrains&#8230;)</li>
+<li>Chọn (Select) dữ liệu MySQL</li>
+<li>Thêm (Insert) dữ liệu MYSQL</li>
+<li>Chỉnh sửa (Update) dữ liệu MYSQL</li>
+<li>Xoá (Delete) dữ liệu MySQL</li>
+<li>Cơ chế prepared câu SQL trong PHP</li>
+<li>Thao tác với CSDL trong PHP thông qua PDO</li>
+</ol>
+<h2><strong><span style="color: #0000ff;">Lập trình phát triển ứng dụng PHP</span></strong></h2>
+<ol>
+<li>Hiển thị sản phẩm trên trang chủ và theo từng chuyên mục sản phẩm</li>
+<li>Tìm kiếm và phân trang trong PHP</li>
+<li>Đăng ký, đăng nhập, ghi nhớ đăng nhập, quên mật khẩu trong php</li>
+<li>Upload file trong PHP</li>
+<li>Đếm số người Online</li>
+<li>Hệ thống bình chọn bằng PHP và MySQL</li>
+<li>Tạo Giỏ hàng trong PHP</li>
+<li>Xây dựng chức năng checkout</li>
+<li>Tích hợp thanh toán trực tuyến vào giỏ hàng</li>
+<li>Tìm kiếm với PHP và Ajax</li>
+<li>Sử dụng Google reCAPTCHA với PHP</li>
+<li>Quản lý đơn hàng bằng php và mysql</li>
+<li>Tạo trang quản lý sản phẩm
+<ol>
+<li>Quản lý menu</li>
+<li>Quản lý sản phẩm: thêm, xoá, sửa, update.</li>
+<li>Chức năng Quản lý User.</li>
+<li>Quản lý chuyên mục.</li>
+<li>&#8230;</li>
+</ol>
+</li>
+</ol>
+<h2><span style="color: #0000ff;"><strong>Tìm Hiểu Mô Hình MVC Với PHP</strong></span></h2>
+<h2><strong><span style="color: #0000ff;">Học Framework của PHP</span></strong></h2>
+<h3>Học Laravel</h3>
+<h2><span style="color: #0000ff;"><strong>Nguồn tài nguyên, tài liệu tốt nhất để học Lập trình PHP</strong></span></h2>
+<p>Các bạn có thể tham khảo một số nguồn tài liệu chuyên về PHP bên dưới.</p>
+<ol>
+<li>Học tập từ tài liệu trên <strong><a href="https://www.w3schools.com/php/default.asp" target="_blank" rel="noopener noreferrer">W3 Schools</a></strong></li>
+<li>Đọc documents trên <strong><a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">php.net</a></strong></li>
+</ol>
+<p>Ngoài ra các bạn cũng có thể đăng lý học những khoá học chất lượng từ <strong>Udemy.com, Tutorialspoint.com</strong> hoặc học qua video hướng dẫn trên Youtube.</p>
+<p>Tất cả đều nhằm mục đích hỗ trợ cho việc học tập của các bạn, Việc còn lại phụ thuộc vào sự cần cù và đam mê của các bạn để trong quá trình học không bị chán nản mà bỏ giữa chừng nhé!</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<div style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></div>
+<p>&nbsp;</p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2452"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">3</strong>
+        <span class="kksr-muted">
+            votes        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/">Lộ trình học PHP từ cơ bản đến nâng cao chuyên nghiệp</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/lo-trinh-hoc-php-tu-co-ban-den-nang-cao-chuyen-nghiep/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Bài 19: Xử lý ngoại lệ trong PHP &#8211; PHP Exceptions</title>
+		<link>https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/</link>
+				<comments>https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/#respond</comments>
+				<pubDate>Wed, 26 Feb 2020 04:34:07 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Code Website]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[Khoá Học]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2381</guid>
+				<description><![CDATA[<p>Ngoại lệ, error và xử lý ngoại lệ là những khái nhiệm rất quen thuộc đối với tất cả các lập trình viên. Bài viết này trình bày các vấn đề liên quan đến Exception trong PHP. PHP có cung cấp các cơ chế giúp bắt lỗi, giám sát các lỗi và xử lý các [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/">Bài 19: Xử lý ngoại lệ trong PHP &#8211; PHP Exceptions</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Ngoại lệ, error và xử lý ngoại lệ là những khái nhiệm rất quen thuộc đối với tất cả các lập trình viên. Bài viết này trình bày các vấn đề liên quan đến Exception trong PHP. PHP có cung cấp các cơ chế giúp bắt lỗi, giám sát các lỗi và xử lý các lỗi có thể xảy ra khi lập trình.</p>
+<p>Trong nhiều ứng dụng lớn, có thể mở rộng, trong các ứng dụng hướng đối tượng và các frameworks thì việc bắt được các Exception trong quá trình develop là điều cực kì tốt.</p>
+<figure id="attachment_2446" aria-describedby="caption-attachment-2446" style="width: 482px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/xu-ly-ngoai-le-php-exception.png"><img class="size-full wp-image-2446" src="https://tanhongit.com/wp-content/uploads/2020/02/xu-ly-ngoai-le-php-exception.png" alt="xu ly ngoai le php exception" width="482" height="271" srcset="https://tanhongit.com/wp-content/uploads/2020/02/xu-ly-ngoai-le-php-exception.png 482w, https://tanhongit.com/wp-content/uploads/2020/02/xu-ly-ngoai-le-php-exception-300x169.png 300w" sizes="(max-width: 482px) 100vw, 482px" /></a><figcaption id="caption-attachment-2446" class="wp-caption-text">Bài 19: Xử lý ngoại lệ trong PHP – PHP Exceptions</figcaption></figure>
+<h2><span style="color: #0000ff;"><strong>Ngoại lệ (Exception) trong PHP là gì?</strong></span></h2>
+<p>Bạn có thể hiểu nôm na ngoại lệ như sau: Trong lập trình chúng ta sẽ tạo ra những đoạn code, hàm, mảng mới mong muốn nó thực hiện một hành động nào đó trong chương trình. Như vậy, tất cả các hành động có thể xảy ra mà khác với mong muốn đó thì nó chính là <strong>ngoại lệ (Exception).</strong></p>
+<p>Và chúng ta sẽ không bao giờ muốn cho chương trình của mình hoạt động sai mong muốn phải không nào. Vì thế mà ta cần xử lý ngoại lệ để tránh những ngoại lệ đó phá hỏng chương trình.</p>
+<p>Trái ngược với hệ thống xử lý lỗi trong PHP, xử lý ngoại lệ là phương pháp hướng đối tượng để xử lý lỗi, cung cấp hình thức báo cáo lỗi linh hoạt và có kiểm soát hơn.</p>
+<h2><span style="color: #0000ff;"><strong>Các phương pháp xử lý ngoại lệ trong PHP</strong></span></h2>
+<ul>
+<li>Sử dụng try, throw và catch.</li>
+<li>Tạo lớp ngoại lệ tùy chỉnh.</li>
+<li>Xử lý nhiều ngoại lệ.</li>
+<li>Ném lại một ngoại lệ.</li>
+<li>Thiết lập trình xử lý ngoại lệ cao cấp.</li>
+</ul>
+<h2><span style="color: #0000ff;"><strong>Xử lý ngoại lệ (Exception Handling) trong PHP</strong></span></h2>
+<h3><strong>Sử dụng try, throw và catch</strong></h3>
+<p>Ta sẽ có một số khái niệm cần lưu ý dưới đây:</p>
+<p><b>Try</b> − Một hàm sử dụng một exception nên nằm trong khối try. Nếu exception <strong>không xảy ra( không được kích hoạt)</strong>, code sẽ tiếp tục như bình thường. Tuy nhiên, nếu exception <strong>xảy ra ( được kích hoạt)</strong> thì exception đó sẽ bị &#8220;thrown&#8221;.</p>
+<p><strong>Throw</strong> − Đây là cách bạn kích hoạt một exception. Mỗi &#8220;thrown&#8221; phải có ít nhất một &#8220;catch&#8221;.</p>
+<p><strong>Catch</strong> − Mỗi khối &#8220;catch&#8221; bắt một exception và tạo một đối tượng chứa thông tin của exception đó.</p>
+<h4><strong>Cú pháp tổng quát của try catch</strong></h4>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+  try {
+    //Thực hiện đoạn mã này có khả năng ném ra một ngoại lệ
+  }
+  catch (Exception $e) {
+    //Xử lý ngoại lệ ở đây
+  }
+?&gt;</pre>
+<p>Ví dụ:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php 
+// PHP Program to illustrate normal 
+// try catch block code 
+function demo($var) { 
+    echo "&lt;br&gt; Before try block"; 
+    try { 
+        echo "&lt;br&gt; Inside try block"; 
+              
+        // If var is zero then only if will be executed 
+        if($var == 0) 
+        { 
+                  
+            // If var is zero then only exception is thrown 
+            throw new Exception('Number is zero.'); 
+                  
+            // This line will never be executed 
+            echo "&lt;br&gt; After throw (It will never be executed)"; 
+        } 
+    } 
+          
+    // Catch block will be executed only  
+    // When Exception has been thrown by try block 
+    catch(Exception $e) { 
+            echo "&lt;br&gt; Exception Caught: ", $e-&gt;getMessage(); 
+        } 
+          
+        // This line will be executed whether 
+        // Exception has been thrown or not  
+        echo "&lt;br&gt; After catch (will be always executed)"; 
+} 
+
+// Exception will not be rised 
+demo(2); 
+echo '&lt;br&gt;';
+echo '&lt;br&gt;';
+// Exception will be rised here 
+demo(0); 
+?&gt;</pre>
+<p>Kết quả:</p>
+<pre>Before try block
+Inside try block
+After catch (will be always executed)
+
+
+Before try block
+Inside try block
+Exception Caught: Number is zero.
+After catch (will be always executed)</pre>
+<p>Trong đó Hàm <strong>demo()</strong> kiểm tra nếu một số có bằng 0 hay không. Nếu điều kiện đúng ngoại lệ được ném ra. Khối “<strong>catch</strong>” lấy ra ngoại lệ và tạo ra một đối tượng ($e) chứa thông tin ngoại lệ. Thông báo lỗi từ ngoại lệ được lặp lại bằng cách gọi <strong>$e-&gt;getMessage()</strong> từ đối tượng ngoại lệ.</p>
+<p>Trong ví dụ trên, hàm <strong>$e-&gt;getMessage()</strong> được sử dụng để lấy <strong>error message</strong>. Không chỉ có mỗi một hàm đó, dưới đây là một số hàm có thể được sử dụng từ lớp Exception trong PHP.</p>
+<h3><strong>Một số hàm lấy error message</strong></h3>
+<ul class="list">
+<li><b>getMessage()</b> − thông báo của exception</li>
+<li><b>getCode()</b> − code của exception</li>
+<li><b>hàm getFile()</b> − tên source file</li>
+<li><b>getLine()</b> − source line</li>
+<li><b>getTrace()</b> − n mảng của backtrace()</li>
+<li><b>hàm getTraceAsString()</b> − chuỗi được định dạng của trace</li>
+<li><strong>getClass()</strong> &#8211; class có exception</li>
+</ul>
+<p>Từ ví dụ về try catch trên ta có thể thêm như sau:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+// PHP Program to illustrate normal 
+// try catch block code 
+function demo($var)
+{
+    echo "&lt;br&gt; Before try block";
+    try {
+        echo "&lt;br&gt; Inside try block";
+
+        // If var is zero then only if will be executed 
+        if ($var == 0) {
+
+            // If var is zero then only exception is thrown 
+            throw new Exception('Number is zero.');
+
+            // This line will never be executed 
+            echo "&lt;br&gt; After throw (It will never be executed)";
+        }
+    }
+
+    // Catch block will be executed only  
+    // When Exception has been thrown by try block 
+    catch (Exception $e) {
+        echo "&lt;br&gt; Exception Caught: ", $e-&gt;getMessage();
+        echo "&lt;br&gt; Exception Caught: ", $e-&gt;getFile();
+        echo "&lt;br&gt; Exception Caught: ", $e-&gt;getCode();
+        echo "&lt;br&gt; Exception Caught: ", $e-&gt;getLine();
+        echo "&lt;br&gt; Exception Caught: ", $e-&gt;getTraceAsString();
+    } 
+
+    // This line will be executed whether 
+    // Exception has been thrown or not  
+    echo "&lt;br&gt; After catch (will be always executed)";
+}
+
+// Exception will not be rised 
+demo(5);
+echo '&lt;br&gt;';
+echo '&lt;br&gt;';
+// Exception will be rised here 
+demo(0);
+</pre>
+<pre>Before try block
+Inside try block
+After catch (will be always executed)
+
+
+Before try block
+Inside try block
+Exception Caught: Number is zero.
+Exception Caught: C:\wamp64\www\webdemo\index2.php
+Exception Caught: 0
+Exception Caught: 14
+Exception Caught: #0 C:\wamp64\www\webdemo\index2.php(41): demo(0) #1 {main}
+After catch (will be always executed)</pre>
+<h2><span style="color: #0000ff;"><strong>Tạo lớp ngoại lệ tuỳ chỉnh</strong></span></h2>
+<p>Để tạo một trình xử lý ngoại lệ tùy chỉnh, bạn phải tạo một lớp đặc biệt với các hàm có thể được gọi khi một ngoại lệ xảy ra trong PHP. Lớp này phải được kế thừa lớp Exception.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php 
+class myException extends Exception { 
+    function get_Message() { 
+          
+        // Error message 
+        $errorMsg = 'Error on line '.$this-&gt;getLine(). 
+                    ' in '.$this-&gt;getFile() 
+        .$this-&gt;getMessage().' is number zero'; 
+        return $errorMsg; 
+    } 
+} 
+  
+function demo($a) { 
+    try { 
+      
+        // Check if 
+        if($a == 0) { 
+            throw new myException($a); 
+        } 
+    } 
+      
+    catch (myException $e) { 
+      
+        // Display custom message 
+        echo $e-&gt;get_Message(); 
+    } 
+} 
+  
+// This will not generate any exception 
+demo(5); 
+  
+// It will cause an exception 
+demo(0); 
+?&gt;</pre>
+<p>Kết quả: <strong><code>Error on line 18 in C:\wamp64\www\webdemo\index2.php0 is number zero</code></strong></p>
+<p>Đầu tiên ta sẽ tạo một class có tên <strong>myException</strong> được kế thừa từ class <strong>Exception</strong>, như vậy, nó sẽ kế thừa tất cả các phương thức và thuộc tính từ lớp Exception.</p>
+<p>Trong class trên sẽ tạo một hàm <strong>get_message</strong> để thông báo lỗi nếu một số truyền vào bằng 0.</p>
+<p>Ra khỏi class, ta dựng một hàm demo() với nội dung bên trong thực hiện try catch để kiểm tra xem số truyền vào có bằng 0 không. Nếu số bằng 0, một ngoại lệ sẽ được ném và sau đó khối catch sẽ bắt được ngoại lệ về rồi hiển thị ra thông tin lỗi.</p>
+<h2 id="goto-h2-5"><span style="color: #0000ff;"><strong>Xử lý nhiều ngoại lệ &#8211; Multiple Exceptions</strong></span></h2>
+<p><strong>Multiple Exceptions</strong> là cách sử dụng nhiều block <strong>try&#8230;catch</strong> để cố gắng bắt các ngoại lệ được ném ra.</p>
+<p>Ở phương pháp này chúng ta có thể sử dụng các câu lệnh điều khiển như if…else, switch, hoặc các ngoại lệ lồng vào nhau.</p>
+<h4>Cú pháp tổng thể</h4>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">try {
+     // Some code...
+} catch (ExceptionType1 | ExceptionType2 $e) {
+     // Code to handle the exception
+} catch (\Exception $e) {
+     // ...
+}</pre>
+<p>Ví dụ:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+
+class A_Error extends Exception {}
+class B_Error extends Exception {}
+class C_Error extends Exception {}
+
+try {
+    throw new A_Error();
+} 
+catch (A_Error $e) { goto abc; }
+catch (B_Error $e) { goto abc; }
+catch (C_Error $e) {
+abc:
+    var_dump(get_class($e));
+    echo "Error one";
+}</pre>
+<p>Xử lý nhiều ngoại lệ sẽ có ích khi bạn muốn hiển thị thông điệp hoặc thực hiện một hành động nào đó tuỳ thuộc vào mỗi ngoại lệ được ném ra.</p>
+<h2><span style="color: #0000ff;"><strong>Thiết lập xử lý ngoại lệ cao cấp &#8211; Set Top Level Exception Handler</strong></span></h2>
+<p>Hàm <strong>set_exception_handler()</strong> sẽ đặt tất cả hàm do người dùng đã xác định thành tất cả ngoại lệ chưa được lưu.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+function myException($exception) {
+  echo "&lt;b&gt;Exception:&lt;/b&gt; " . $exception-&gt;getMessage();
+}
+ 
+set_exception_handler('myException');
+ 
+throw new Exception('Uncaught Exception occurred');
+?&gt;</pre>
+<p>Trong đoạn mã trên không có khối &#8220;catch&#8221;. Thay vào đó, trình xử lý ngoại lệ cấp cao nhất được kích hoạt. Hàm này nên được sử dụng để bắt các ngoại lệ chưa được catch.</p>
+<p><strong>Kết quả:</strong></p>
+<pre>Exception: Uncaught Exception occurred</pre>
+<p>Ví dụ khác:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php 
+// PHP Program to illustrate normal 
+// try catch block code 
+// Function for Uncaught Exception 
+function myException($exception) { 
+      
+    // Details of Uncaught Exception 
+    echo "&lt;br&gt; Exception: " . $exception-&gt;getMessage(); 
+} 
+  
+// Set Uncaught Exception handler 
+set_exception_handler('myException');
+
+function demo($var) { 
+    echo "&lt;br&gt; Before try block"; 
+    try { 
+        echo "&lt;br&gt; Inside try block"; 
+              
+        // If var is zero then only if will be executed 
+        if($var == 0) 
+        { 
+                  
+            // If var is zero then only exception is thrown 
+            throw new Exception('Number is zero.'); 
+                  
+            // This line will never be executed 
+            echo "&lt;br&gt; After throw (It will never be executed)"; 
+        } 
+    } 
+          
+    // Catch block will be executed only  
+    // When Exception has been thrown by try block 
+    catch(Exception $e) { 
+            echo "&lt;br&gt; Exception Caught: ", $e-&gt;getMessage(); 
+        } 
+          
+        // This line will be executed whether 
+        // Exception has been thrown or not  
+        echo "&lt;br&gt; After catch (will be always executed)"; 
+        if($var &lt; 0) {  
+          
+            // Uncaught Exception 
+            throw new Exception('Uncaught Exception occurred'); 
+        } 
+} 
+
+// Exception will not be rised 
+demo(2); 
+echo '&lt;br&gt;';
+// Exception will be rised here 
+demo(0); 
+// Uncaught Exception 
+demo (-3); 
+?&gt;
+</pre>
+<pre>Before try block
+Inside try block
+After catch (will be always executed)
+
+Before try block
+Inside try block
+Exception Caught: Number is zero.
+After catch (will be always executed)
+Before try block
+Inside try block
+After catch (will be always executed)
+Exception: Uncaught Exception occurred</pre>
+<p><span style="text-decoration: underline;"><strong>Tham khảo:</strong></span></p>
+<ul>
+<li><a href="https://www.php.net/manual/en/language.exceptions.php" target="_blank" rel="noopener noreferrer">https://www.php.net/manual/en/language.exceptions.php</a></li>
+<li><a href="https://www.geeksforgeeks.org/exception-handling-in-php/" target="_blank" rel="noopener noreferrer">https://www.geeksforgeeks.org/exception-handling-in-php/</a></li>
+<li><a href="https://stackoverflow.com/questions/8439581/catching-multiple-exception-types-in-one-catch-block/37522012" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/questions/8439581/catching-multiple-exception-types-in-one-catch-block/37522012</a></li>
+<li><a href="https://github.com/php/php-src/commit/0aed2cc2a440e7be17552cc669d71fdd24d1204a" target="_blank" rel="noopener noreferrer">https://github.com/php/php-src/commit/0aed2cc2a440e7be17552cc669d71fdd24d1204a</a></li>
+</ul>
+<h2><strong>Kết thúc</strong></h2>
+<p>Bài viết trên mình đã liệt kê một vài cách để xử lý ngoại lệ trong lập trình PHP. Mỗi bài viết về kiến thức học PHP của mình đều có thể chưa hoàn toàn đầy đủ, cho nên mong các bạn hãy tra google khi tham khảo và mong bạn có thể gửi lại comment bổ sung bên dưới để mình có thể hoàn thiện lại bài viết hơn. Cảm ơn các bạn!</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li>
+<p class="post-title single-post-title entry-title"><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 10: Mảng (Array) Trong PHP</a></strong></p>
+</li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">15: Session trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/" target="_blank" rel="noopener noreferrer">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/" target="_blank" rel="noopener noreferrer">Bài 18: Những hàm kiểm tra dữ liệu trong PHP (isset, empty,&#8230;)</a></strong></li>
+</ul>
+<p style="text-align: right;"><strong>Tổng hợp Internet</strong></p>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2381"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 0px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <span class="kksr-muted">Rate this post</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/">Bài 19: Xử lý ngoại lệ trong PHP &#8211; PHP Exceptions</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/bai-19-xu-ly-ngoai-le-trong-php-php-exceptions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Bài 18: Những hàm kiểm tra dữ liệu trong PHP (isset, empty,&#8230;)</title>
+		<link>https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/</link>
+				<comments>https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/#respond</comments>
+				<pubDate>Mon, 24 Feb 2020 09:52:16 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Code Website]]></category>
+		<category><![CDATA[Khoá Học]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2382</guid>
+				<description><![CDATA[<p>Tiếp tục series học PHP căn bản, bài này chúng ta sẽ tìm hiểu về một số hàm dùng để kiểm tra dữ liệu hoặc biến về sự tồn tại của nó. Và những lợi ích của nó trong lập trình website PHP. Có rất nhiều hàm kiểm tra dữ liệu giá trị của một [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/">Bài 18: Những hàm kiểm tra dữ liệu trong PHP (isset, empty,&#8230;)</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Tiếp tục series học PHP căn bản, bài này chúng ta sẽ tìm hiểu về một số hàm dùng để kiểm tra dữ liệu hoặc biến về sự tồn tại của nó. Và những lợi ích của nó trong lập trình website PHP.</p>
+<p>Có rất nhiều hàm kiểm tra dữ liệu giá trị của một biến trong PHP. Mỗi hàm sẽ có một chức năng phụ thuộc vào từng loại biến và cách sử dụng khác nhau, Nhưng mình chỉ giới thiệu các hàm thông dụng thường hay dùng đó là<strong> isset(), empty() và is_null(),&#8230;.</strong></p>
+<p>Tất cả các hàm được liệt kê trên này đều trả về một giá trị <strong>boolean</strong>. Nó sẽ rất có ích cho các bạn trong việc làm web sử dụng ngôn ngữ php. Nhưng nếu các chức năng này không được sử dụng đúng cách, chúng có thể gây ra các kết quả không mong muốn.</p>
+<figure id="attachment_2392" aria-describedby="caption-attachment-2392" style="width: 482px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/kiem-tra-du-lieu-isset-php.png"><img class="size-full wp-image-2392" src="https://tanhongit.com/wp-content/uploads/2020/02/kiem-tra-du-lieu-isset-php.png" alt="kiem tra du lieu isset php" width="482" height="271" srcset="https://tanhongit.com/wp-content/uploads/2020/02/kiem-tra-du-lieu-isset-php.png 482w, https://tanhongit.com/wp-content/uploads/2020/02/kiem-tra-du-lieu-isset-php-300x169.png 300w" sizes="(max-width: 482px) 100vw, 482px" /></a><figcaption id="caption-attachment-2392" class="wp-caption-text">Kiểm tra dữ liệu trong PHP (isset, empty,…)</figcaption></figure>
+<h2><span style="background-color: #ffffff; color: #0000ff;"><strong>Hàm isset($value)</strong></span></h2>
+<p>Về hàm này mình đã từng nói sơ qua và áp dụng ví dụ rất nhiều lầm ở các bài viết trước đây rồi. Tác dụng của nó dùng để kiểm tra biến $value có tồn tại hay không. Nó sẽ trả về true chỉ khi biến không phải là <strong>null</strong>.</p>
+<p>Thông thường bạn hay dùng hàm này để kiểm tra một biến trước khi xử lý thao tác đến nó.</p>
+<h3>Cú pháp</h3>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">isset($value1, $value2 ......)</pre>
+<h3><strong>Tham số</strong></h3>
+<ul>
+<li>$value1: Là biến thứ nhất cần kiểm tra (bắt buộc phải có)</li>
+<li>$value2 ,&#8230;$value_n các biến còn lại cần kiểm tra( có thể có hoặc không)</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$data = 'phpcanban';
+if (isset($data))
+    echo 'Biến này tồn tại';
+else
+    echo 'Biến này không tồn tại';
+?&gt;</pre>
+<h3>Hàm isset() được sử dụng trong trường hợp nào</h3>
+<p>Trong quá trình biên dịch nếu trong code có sử dụng một biến không tồn tại thì trình biên dịch sẽ ngưng xử lý và thông báo lỗi ngay, chính vì vậy thông thường những trường hợp mà ta không chắc chắn là biến đó luôn tồn tại thì trước khi sử dụng hãy kiểm tra nó bằng isset.</p>
+<p>Ngoài ra nó còn có một số ứng dụng sau:</p>
+<ul>
+<li>Thường được sử dụng trong From kiểm tra sự xác định của biến</li>
+<li>Kiểm tra sự xác định của phần tử trong mảng phục vụ cho xử lý và xuất giá trị trong mảng</li>
+</ul>
+<p>Ví dụ:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">//kiểm tra giá trị phần tử trong mảng
+&lt;?php
+$var = array(
+    "php",
+    'laptrinh',
+    null,
+    27,
+    "php can ban",
+    null
+);
+foreach ($var as $value) {
+    if (isset($value)) {
+        echo 'this var is set &lt;br /&gt;';
+    } else {
+        echo 'this var is not set &lt;br /&gt;';
+    }
+}
+/*output:
+this var is set
+this var is set
+this var is not set
+this var is set
+this var is set
+this var is not set*/
+?&gt;</pre>
+<p>Nếu biến đã được khai báo, nhưng sau đó lại được loại bỏ bởi hàm <strong>unset()</strong> thì khi kiểm tra với hàm <strong>isset()</strong> sẽ trả về kết quả FALSE.</p>
+<p>Khi sử dụng isset () trên các thuộc tính đối tượng không thể tiếp cận, phương thức nạp chồng __isset () sẽ được gọi, nếu được khai báo.</p>
+<p>Các bạn có thể tham khảo thêm về hàm isset <strong><a href="https://www.php.net/manual/en/function.isset.php" target="_blank" rel="noopener noreferrer">tại đây</a></strong>.</p>
+<h2><span style="color: #0000ff;"><strong>Hàm empty($var)</strong></span></h2>
+<p>Kiểm tra biến $var có phải giá trị trống hay không. Tất cả các giá trị như: số 0, giá trị null, giá trị rỗng, giá trị false đều được quy về là empty.</p>
+<h3>Cú pháp</h3>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">empty($var);</pre>
+<h3>Tham số</h3>
+<p>Tham số của hàm <strong>empty($var)</strong> chỉ hỗ trợ khi chỉ có mỗi một biến $var.</p>
+<p>Nếu biến $var không tồn tại thì hàm này vẫn không báo lỗi và sẽ trả kết quả về false.</p>
+<p><strong>Những giá trị sau đấy được xem là rỗng:</strong></p>
+<ul>
+<li><em>&#8220;&#8221;</em> (Chuỗi)</li>
+<li><em>0</em> (0 là số nguyên)</li>
+<li><em>0.0</em> (0 là số thực)</li>
+<li><em>&#8220;0&#8221;</em> (0 là chuổi)</li>
+<li><strong><code>NULL</code></strong></li>
+<li><strong><code>FALSE</code></strong></li>
+<li><em>array()</em> (là mảng rỗng)</li>
+<li><em>$var;</em> (biến chưa khai báo, không có giá trị)</li>
+</ul>
+<div class="alert alert-success">Hàm <strong>empty($var)</strong> sẽ tương đương <strong>!isset($var)</strong> hoặc <strong>$var == false.</strong></div>
+<div>Cũng có thể ở một số trường hợp isset($var) trả về TRUE nhưng empty($var) lại trả về FALSE. Vì thế trong quá trình thiết lập các biểu thức điều kiện cần xác định rõ để tạo biểu thức thích hợp</div>
+<div>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$data = [];
+if (empty($data))
+    echo 'Biến này rỗng';
+else
+    echo 'Biến này không rỗng';</pre>
+<p><strong style="color: #1d1f20; font-size: 1.563em;">Hàm empty() được sử dụng trong trường hợp nào</strong></p>
+</div>
+<div>
+<ul>
+<li>Sử dụng để kiểm tra giá trị biến xem có rỗng hay không</li>
+<li>Phục vụ cho qua trình kiểm tra chuẩn hóa dữ liệu khi thao tác đến nhận giá trị từ Form</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">//kiểm tra dữ liệu từ form đăng nhập
+if (empty($_POST['password'])){
+    echo 'Bạn chưa nhập tên mật khẩu';
+}</pre>
+<p>Các bạn có thể tham khảo thêm về hàm empty <strong><a href="https://www.php.net/manual/en/function.empty.php" target="_blank" rel="noopener noreferrer">tại đây</a></strong>.</p>
+</div>
+<h2><span style="color: #0000ff;"><strong>Hàm is_null($var)</strong></span></h2>
+<p>Hàm sẽ kiểm tra biến $var có phải giá trị null không.</p>
+<p>Nói cách khác, nó chỉ trả về <strong>true</strong> khi biến là <strong>null</strong> . <strong>is_null ()</strong> trái ngược với <strong>isset ()</strong>, ngoại trừ một điểm khác biệt là có thể áp dụng ngay bây giờ cho các biến không xác định</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$demo= null;
+if (is_null($demo))
+    echo 'Biến này là null';
+else
+    echo 'Biến này không phải là null';</pre>
+<p>Các bạn có thể tham khảo thêm về hàm is_null <strong><a href="https://www.php.net/manual/en/function.is-null.php" target="_blank" rel="noopener noreferrer">tại đây</a></strong>.</p>
+<h2><span style="color: #0000ff;"><strong>Một số hàm kiểm tra dữ liệu cho biến khác</strong></span></h2>
+<h3><strong>is_array($var)</strong></h3>
+<p>Hàm <strong>is_array</strong>() kiểm tra xem một biến <strong>$var</strong> có phải là một mảng hay không.</p>
+<p>Hàm này trả về true nếu biến là một mảng, nếu không, nó trả về false / nothing.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$yes = array('this', 'is', 'an array');
+
+echo is_array($yes) ? 'Array' : 'not an Array';
+echo "\n";
+
+$no = 'this is a string';
+
+echo is_array($no) ? 'Array' : 'not an Array';
+?&gt;</pre>
+<h3><strong>is_string($var)</strong></h3>
+<p>Kiểm tra biến $var có phải kiểu chuỗi hay không.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$values = array(false, true, null, 'abc', '23', 23, '23.5', 23.5, '', ' ', '0', 0);
+foreach ($values as $value) {
+    echo "is_string(";
+    var_export($value);
+    echo ") = ";
+    echo var_dump(is_string($value));
+}
+?&gt;</pre>
+<h3><strong>is_int($var) hoặc is_integer($var)</strong></h3>
+<p>Kiểm tra biến $var có phải kiểu INT hay không.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$values = array(23, "23", 23.5, "23.5", null, true, false);
+foreach ($values as $value) {
+    echo "is_int(";
+    var_export($value);
+    echo ") = ";
+    var_dump(is_int($value));
+}
+?&gt;</pre>
+<h3><strong>is_float($var)</strong></h3>
+<p>Kiểm ta biến $var có phải kiểu float hay không</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">var_dump(is_float(27.25));
+var_dump(is_float('abc'));
+var_dump(is_float(23));
+var_dump(is_float(23.5));
+var_dump(is_float(1e7));  //Scientific Notation
+var_dump(is_float(true));
+?&gt;</pre>
+<h3><strong>is_double($var)</strong></h3>
+<p>Kiểm tra biến $var có phải kiểu double hay không.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$var_name=127.55;
+if (is_double($var_name))
+echo 'This is a double value.&lt;br&gt;';
+else
+echo 'This is not a double value.&lt;br&gt;';
+echo '&lt;br&gt;';
+var_dump(is_double(85));
+echo '&lt;br&gt;';
+var_dump(is_double(1e8));
+echo '&lt;br&gt;';
+var_dump(is_double(true));
+echo '&lt;br&gt;';
+var_dump(is_double(array(23.3, 56, 6)));
+?&gt;</pre>
+<p><strong>in_array($needle, $haystackarray)</strong></p>
+<p>Kiểm tra giá trị $needle có trong mảng $haystackarray hay không</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$os = array("Mac", "NT", "Irix", "Linux");
+if (in_array("Irix", $os)) {
+    echo "Got Irix";
+}
+if (in_array("mac", $os)) {
+    echo "Got mac";
+}
+?&gt;</pre>
+<h3><strong>array_key_exists($key, $searcharray)</strong></h3>
+<p>Kiểm tra key $key có trong mảng $searcharray hay không</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$search_array = array('first' =&gt; 1, 'second' =&gt; 4);
+if (array_key_exists('first', $search_array)) {
+    echo "The 'first' element is in the array";
+}
+?&gt;</pre>
+<h3 id="load-h3-3"><strong>is_numeric($var)</strong></h3>
+<p>Hàm có tác dụng kiểm tra xem một biến có phải là số hay không</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$demo = 20;
+if (is_numeric($demo))
+    echo 'Biến này là số';
+else
+    echo 'Biến này không phải là số';
+?&gt;</pre>
+<p>Còn có vô số hàm khác mà mình không thể liệt kê hết được, các bạn có thể vào php.net để tìm tòi và lục lọi những hàm phù hợp với bài toán của các bạn nhé. Các bạn có thể thao khảo link về <a href="https://www.php.net/manual/en/funcref.php" target="_blank" rel="noopener noreferrer">function tại đây</a>.</p>
+<h2><strong>Kết thúc</strong></h2>
+<p>Bạn sẽ phải thường xuyên dùng đến các hàm trên trong quá trình học tập cũng như làm việc với lập trình PHP, qua bài viêt mong bạn đã hình dung được cách sử dụng của chúng và ứng dụng vào mỗi trường hợp của bài toán thật phù hợp.</p>
+<p>Mỗi bài viết về kiến thức học PHP của mình đều có thể chưa hoàn toàn đầy đủ, cho nên mong các bạn hãy tra google khi tham khảo và mong bạn có thể gửi lại comment bổ sung bên dưới để mình có thể hoàn thiện lại bài viết hơn. Cảm ơn các bạn!</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li>
+<p class="post-title single-post-title entry-title"><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 10: Mảng (Array) Trong PHP</a></strong></p>
+</li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">Bài 15: Session trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/" target="_blank" rel="noopener noreferrer">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-8-lenh-break-continue-va-cac-ham-function-exit-die-thuong-dung-trong-php/" target="_blank" rel="noopener noreferrer">Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2382"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">1</strong>
+        <span class="kksr-muted">
+            vote        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/">Bài 18: Những hàm kiểm tra dữ liệu trong PHP (isset, empty,&#8230;)</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/bai-18-nhung-ham-kiem-tra-du-lieu-trong-php-isset-empty/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Bài 17: Xử lý date time ngày tháng trong PHP</title>
+		<link>https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/</link>
+				<comments>https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/#respond</comments>
+				<pubDate>Sun, 23 Feb 2020 10:35:31 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2049</guid>
+				<description><![CDATA[<p>Ở bài viết trước đã học qua về cách xử lý đối với file trong PHP, tiếp tục series học PHP căn bản, bài này chúng ta sẽ tìm hiểu về phương pháp xử lý ngày tháng (date) trong PHP nhé! Vấn đề xử lý ngày tháng cực kì quan trọng khi bạn xử lý [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/">Bài 17: Xử lý date time ngày tháng trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Ở bài viết trước đã học qua về cách xử lý đối với file trong PHP, tiếp tục series học PHP căn bản, bài này chúng ta sẽ tìm hiểu về phương pháp xử lý ngày tháng (date) trong PHP nhé!</p>
+<p>Vấn đề xử lý ngày tháng cực kì quan trọng khi bạn xử lý với các bài viết và đăng lên website. Ví dụ bạn cần in ra ngày tháng đăng bài viết hiển thị theo kiểu <strong>ngày / tháng / năm</strong> hoặc <strong>ngày &#8211; tháng -năm</strong> thì bắt buộc bạn phải biết cách sử dụng các hàm xử lý ngày tháng trong PHP thì mới làm được.</p>
+<figure id="attachment_2353" aria-describedby="caption-attachment-2353" style="width: 482px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/date-time-xu-ly-thoi-gina-ngay-thang-php.png"><img class="size-full wp-image-2353" src="https://tanhongit.com/wp-content/uploads/2020/02/date-time-xu-ly-thoi-gina-ngay-thang-php.png" alt="date time xu ly thoi gina ngay thang php" width="482" height="271" srcset="https://tanhongit.com/wp-content/uploads/2020/02/date-time-xu-ly-thoi-gina-ngay-thang-php.png 482w, https://tanhongit.com/wp-content/uploads/2020/02/date-time-xu-ly-thoi-gina-ngay-thang-php-300x169.png 300w" sizes="(max-width: 482px) 100vw, 482px" /></a><figcaption id="caption-attachment-2353" class="wp-caption-text">Bài 17: Xử lý date time ngày tháng trong PHP</figcaption></figure>
+<p>Không những thế nó còn có liên quan đặc biệt đến cấu trúc cơ sở dữ liệu database nữa nên tầm quan trọng của việc xử lý thời gian này là không hề nhỏ.</p>
+<h2><span style="color: #0000ff;"><strong>Thiết lập múi thời gian (timezone) tại Việt Nam</strong></span></h2>
+<p>Để cấu hình và làm việc với thời gian datetime đúng theo giờ Việt Nam thì bắt buộc ban phải thiết lập <strong>time zone( múi giờ)</strong> cho nó.</p>
+<p>Cú pháp để thiết lập <strong>time zone</strong> là: <span style="color: #0000ff;"><strong>date_default_timezone_set(&#8216;timezone_identifier&#8217;);</strong></span></p>
+<p>Trong đó <strong>timezone_identifier</strong> là time zone mà bạn muốn thiết lập.</p>
+<p>Mình đang ở Châu Á và ở Việt Nam &#8211; Hồ Chí Minh nên sẽ có timezone là <strong>Asia/Ho_Chi_Minh</strong>, mỗi khu vực sẽ chênh lệch nhau thời gian nên các bạn phải chú ý khi website có liên quan đến nước ngoài.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">date_default_timezone_set('Asia/Ho_Chi_Minh');</pre>
+<p>Về múi giờ các bạn có thể tham khảo thêm tại:<a href="http://php.net/manual/en/timezones.php" target="_blank" rel="noopener noreferrer"> http://php.net/manual/en/timezones.php</a></p>
+<p>Hoặc các bạn có thể sử dụng đoạn code dưới đây để xuất ra màn hình danh sách tất cả các timezone:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$timezone = DateTimeZone::listIdentifiers() ;
+foreach ($timezone as $value){
+    echo $value. '&lt;br/&gt;';
+}
+?&gt;</pre>
+<p>Hoặc ta cũng có thể sử dụng hàm <strong>timezone_abbreviations_list</strong> để xuất ra timezone theo code bên dưới.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+foreach (timezone_abbreviations_list() as $timezone) {
+    foreach ($timezone as $value) {
+        if (isset($value['timezone_id'])) {
+            echo $value['timezone_id'] . '&lt;br&gt;';
+        }
+    }
+}
+?&gt;</pre>
+<div class="alert alert-info"><span style="text-decoration: underline;"><strong>Lưu ý:</strong></span> Hàm thiết lập timezine này các bạn nên đặt ở đầu trang để cách đoạn code bên dưới hoạt động được hiệu quả và trính vị lỗi nhé!</div>
+<h2><strong><span style="color: #0000ff;">Định dạng ngày tháng với hàm date()</span></strong></h2>
+<p>Hàm date dùng để chuyển đổi thời gian theo format mà lập trình viên chỉ định mong muốn.</p>
+<p><strong>Cú pháp</strong>: <span style="color: #0000ff;"><strong>date(format, timestamp);</strong></span></p>
+<p><span style="text-decoration: underline;">Trong đó:</span></p>
+<ul>
+<li>format: định  dạng ngày tháng năm, giờ phút giây.</li>
+<li>timestamp(không bắt buộc) mặc định là hàm time() (chính là thời gian hiện tại).</li>
+</ul>
+<h3><strong>Danh sách các format định dạng của date()</strong></h3>
+<ol>
+<li><strong>h</strong>: Trả về giờ trong ngày kiểu 12h.</li>
+<li><strong>H</strong>: Trả về giờ trong ngày kiểu 24h.</li>
+<li><strong>i</strong>: Trả về phút trong giờ.</li>
+<li><strong>s</strong>: Trả về số giây trong phút.</li>
+<li><strong>S</strong>: Trả về hậu tố tiếng Anh cho ngày trong tháng, 2 ký tự. (st, nd, rd, th)</li>
+<li><strong>d: </strong>trả về ngày trong tháng(bằng số từ 1- đến31).</li>
+<li><strong>t</strong>: Số ngày trong 1 tháng (28 -&gt; 31)</li>
+<li><strong>j</strong>: Trả về ngày trong tháng, nhưng nếu ngày&lt;10 sẽ không hiển thị số 0.</li>
+<li><strong>D</strong>: Trả về định dạng thứ trong tuần bằng tiếng anh viết tắt. (có 3 chữ cái)</li>
+<li><strong>l</strong>: Trả về đầy đủ thứ trong tuần (tiếng anh).</li>
+<li><strong>m</strong>: Trả về tháng trong năm (bằng số từ 1 đến 12).</li>
+<li><strong>M</strong>: Trả về tháng trong năm nhưng bằng tiếng anh viết tắt.</li>
+<li><strong>y</strong>: Trả về 2 số cuối cùng của năm.</li>
+<li><strong>Y</strong>: trả về đầy đủ 4 số của năm.</li>
+<li><strong>c</strong>: trả về thời gian kiểu ISO 8601, thường dùng tạo cho thẻ meta publish time trong SEO</li>
+<li><strong>z</strong>: trả về số ngày trong năm (Ngày trong năm bắt đầu từ 0 -&gt; 365)</li>
+</ol>
+<p>Ngoài ra các bạn có thể xem chi tiết đầy đủ về các format khác <strong><a href="https://www.php.net/manual/en/function.date.php" target="_blank" rel="noopener noreferrer">tại đây</a></strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">echo date("Y-m-d"),'&lt;br&gt;'; //kết quả trả ra có dạng như 2020-02-23
+ 
+echo date("d-m-Y"),'&lt;br&gt;'; //kết quả trả ra có dạng như 23-02-2020
+ 
+echo date("d-m-Y H:i:s"),'&lt;br&gt;'; //kết quả trả ra có dạng như 22-02-2020 12:25:31</pre>
+<p>Ngoài ra chúng ta có thể phân cách ngày tháng năm bằng các dấu<strong> chéo </strong><strong><code><span style="color: #0000ff;">/</span></code></strong> hoặc <strong>dấu gạch nối</strong> <span style="color: #0000ff;"><code>-</code></span> hoặc <strong>dấu hai chấm</strong> <span style="color: #0000ff;"><strong><code>:</code></strong></span></p>
+<h3><strong>Truyền thêm chuỗi trong hàm date()</strong></h3>
+<p>Để cho nội dung chuỗi mà các bạn muốn hiển thị được như ý muốn thì các bạn thêm <strong>dấu chéo ngược</strong> <code><span style="color: #0000ff;">\</span></code> vào trước mỗi ký tự của chuỗi.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+echo date('\B\â\y \g\i\ờ \l\à d-m-Y H:i:s');
+?&gt;</pre>
+<h2><span style="color: #0000ff;"><strong>Phương pháp xử lý ngày tháng nâng cao trong PHP</strong></span></h2>
+<h3 id="goto-h3-2"><span style="color: #ff0000;"><strong>Kiểu định dạng ngày tháng chuẩn trong MySQL</strong></span></h3>
+<p>Để lưu đúng định dạng ngày tháng trong MySQL thì bạn sử dụng format bên dưới.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">date('Y-m-d H:i:s');</pre>
+<p>Đây là định dạng chuẩn để bạn có thể sử dụng để đăng bài cũng như upload hay comment một content nào đó mà có lưu lên database.</p>
+<h3 id="load-h3-1"><strong><span style="color: #ff0000;">Chuyển đồi kiểu định dạng ngày tháng</span></strong></h3>
+<p>Ngoài cách đổi kiểu định dạng trực tiếp trong hàm <strong>date()</strong> thì ta có có một cách thay đổi kiểu định dạng xuất ra ngày tháng khác đó là hàm <strong>date_format()</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date = date_create("2020-02-23"); //tạo ngày có thể dùng hàm date_create
+echo date_format($date,"d/Y/m");  //đổi định dạng
+//output: 23/2020/02
+?&gt;</pre>
+<h3 id="goto-h3-3"><span style="color: #ff0000;"><strong>Cộng trừ ngày tháng với <span style="color: #0000ff;">mktime()</span></strong></span></h3>
+<p>Hàm <strong>mktime</strong><strong>()</strong> sẽ tính toán đưa ra ngày chính xác bởi các tham số truyền vào.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">mktime($hour, $minute, $second, $month, $day , $year);</pre>
+<div class="alert alert-info"><strong>Lưu ý</strong>: Hàm này sẽ trả về thời gian kiểu INT nên bạn phải sử dụng hàm date() để chuyển đổi ra định dạng mong muốn.</div>
+<div><strong>Ví dụ: </strong>ta sẽ cộng thêm 5 ngày và 6 giờ đối với ngày 23/02/2020</div>
+<div>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date = mktime((0 + 6), 0, 0, 02, (23 + 5), 2020);
+echo date('d/m/Y', $date); //output: 28/02/2020
+?&gt;</pre>
+<p><strong>Ví dụ 2:</strong> ta sẽ cộng thêm 26 giờ đối với ngày 23/02/2020</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date = mktime((0 + 26), 0, 0, 02, 23, 2020);
+echo date('d/m/Y', $date); //output: 24/02/2020 - ngày đã tự động tăng thêm 1 ngày
+?&gt;
+</pre>
+<p><strong>Ví dụ 3:</strong> ta sẽ cộng thêm 15 ngày đối với ngày 23/02/2020</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date = mktime(0, 0, 0, 02, (23 + 15), 2020);
+echo date('d/m/Y', $date); //output: 09/03/2020 - ngày và tháng đã tự động tăng phù hợp
+?&gt;</pre>
+<p>Các bạn để ý từ 2 ví dụ trên, nếu bạn công số giờ có kết quả quá 24, hoặc cộng số ngày có kết quả vượt qua số ngày trong tháng đó thì giờ hoặc ngày hoặc tháng sẽ tự động tăng thêm 1. Tương tự đối với năm cũng vậy. <strong>Chính vì thế khi thực hiện công trừ đối với thời gian bạn hãy kiểm tra cẩn thận để không bị sai lệch nhé!</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+//xuất ra ngày kế tiếp(ngày mai)
+$tomorrow  = mktime(0, 0, 0, date("m")  , date("d")+1, date("Y"));
+echo date('d/m/Y', $tomorrow) . '&lt;br&gt;';
+
+//Xuất ra ngày này tháng sau
+$lastmonth = mktime(0, 0, 0, date("m")-1, date("d"),   date("Y"));
+echo date('d/m/Y', $lastmonth) . '&lt;br&gt;';
+
+//xuất ra ngày này năm sau
+$nextyear  = mktime(0, 0, 0, date("m"),   date("d"),   date("Y")+1);
+echo date('d/m/Y', $nextyear) . '&lt;br&gt;';
+?&gt;</pre>
+<h3><strong><span style="color: #ff0000;">Thay đổi ngày tháng date_modify()</span></strong></h3>
+<p>Hàm <strong>date_modify()</strong> giúp ta thay đổi ngày tháng hiện hành. Đây cũng là một phương pháp dùng để tính toán công trừ cho ngày tháng các bạn nhé!</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date=date_create("2020-02-23");
+date_modify($date, "+11 days"); // thay đổi ngày bằng phép cộng
+echo date_format($date,"d/Y/m");  //đổi định dạng
+?&gt;</pre>
+<div class="alert alert-success">Như vậy ta có thể sử dụng hàm <strong>date_modify()</strong> và hàm <strong>mktime</strong><strong>()</strong> để tính ngày tháng đều được cả. Nhưng đối với mình lại thường hay dùng hàm mktime để tính hơn.</div>
+<p><strong style="color: #ff0000; font-size: 1.563em;">Lấy thông tin ngày giờ theo dạng mảng với getdate()</strong></p>
+</div>
+<p>Hàm <strong>getdate()</strong> sẽ giúp ta chuyển đổi dữ liệu ngày tháng về dạng mảng trong PHP và ta có thể xuất ra màn hình theo phương pháp sau</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+var_dump(getdate());
+/*kêt quả:
+array (size=11)
+  'seconds' =&gt; int 16
+  'minutes' =&gt; int 3
+  'hours' =&gt; int 4
+  'mday' =&gt; int 23
+  'wday' =&gt; int 0
+  'mon' =&gt; int 2
+  'year' =&gt; int 2020
+  'yday' =&gt; int 53
+  'weekday' =&gt; string 'Sunday' (length=6)
+  'month' =&gt; string 'February' (length=8)
+  0 =&gt; int 1582430596*/
+?&gt;
+</pre>
+<table class="doctable table">
+<thead>
+<tr>
+<th>Khóa</th>
+<th>Giá trị</th>
+<th>ví dụ</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr>
+<td><em>“seconds”</em></td>
+<td>số giây</td>
+<td><em>0</em> đến <em>59</em></td>
+</tr>
+<tr>
+<td><em>“minutes”</em></td>
+<td>số phút</td>
+<td><em>0</em> đến <em>59</em></td>
+</tr>
+<tr>
+<td><em>“hours”</em></td>
+<td>số giờ</td>
+<td><em>0</em> đến <em>23</em></td>
+</tr>
+<tr>
+<td><em>“mday”</em></td>
+<td>Ngày trong tháng</td>
+<td><em>1</em> đến <em>31</em></td>
+</tr>
+<tr>
+<td><em>“wday”</em></td>
+<td>Ngày trong tuần</td>
+<td><em>0</em> (Sunday) đến <em>6</em> (Saturday)</td>
+</tr>
+<tr>
+<td><em>“mon”</em></td>
+<td>Tháng</td>
+<td><em>1</em> đến <em>12</em></td>
+</tr>
+<tr>
+<td><em>“year”</em></td>
+<td>Năm</td>
+<td><em>1999</em></td>
+</tr>
+<tr>
+<td><em>“yday”</em></td>
+<td>Ngày của năm</td>
+<td><em>0</em> đến <em>365</em></td>
+</tr>
+<tr>
+<td><em>“weekday”</em></td>
+<td>Ngày trong tuần(dạng chữ)</td>
+<td><em>Sunday</em> đến <em>Saturday</em></td>
+</tr>
+<tr>
+<td><em>“month”</em></td>
+<td>Tháng(dạng chữ)</td>
+<td><em>January</em> đến <em>December</em></td>
+</tr>
+<tr>
+<td><em>0</em></td>
+<td>time()</td>
+<td>timestamp,<em>-2147483648</em> đến <em>2147483647</em>.</td>
+</tr>
+</tbody>
+</table>
+<h3><span style="color: #ff0000;"><strong>Một số hàm lấy thông tin date/time khác</strong></span></h3>
+<h4>Lấy ngày cuối cùng của tháng</h4>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">//last day of month
+function lastday($month = '', $year = '') {
+   if (empty($month)) {
+      $month = date('m');
+   }
+   if (empty($year)) {
+      $year = date('Y');
+   }
+   $result = strtotime("{$year}-{$month}-01");
+   $result = strtotime('-1 second', strtotime('+1 month', $result));
+   return date('Y-m-d', $result);
+}
+echo lastday('6','2020');</pre>
+<p>Ở hàm trên bạn sẽ thấy trong code có tạo 2 biến <strong>$year</strong> và <strong>$month</strong>. Đầu tiên sẽ kiểm tra nếu ko có 2 thông số truyền vào phù hợp thì hàm sẽ tự đông lấy năm và tháng thông qua thời gian của hiện tại. Sau đó ta sẽ gán biến <strong>$result</strong> bằng ngày đầu tiên của tháng trong năm hiện tại. Tiếp tục ta gán đè biến $result thêm 1 lần nữa như sau:</p>
+<p><span class="me0">ở lệnh <span style="color: #0000ff;"><strong>strtotime</strong></span></span><strong><span class="br0">(</span><span class="st1">&#8216;-1 second&#8217;</span><span class="">, </span><span class="me0" style="color: #ff0000;">strtotime</span><span class="br0">(</span><span class="st1">&#8216;+1 month&#8217;</span><span class="">, </span><span class="kw3">$result</span><span class="br0">)</span><span class="br0">)</span></strong><span class=""><strong>;</strong> ta thấy hàm <span class="me0"><span style="color: #ff0000;"><strong>strtotime</strong> </span>được lồng bên trong sẽ </span></span>tính bằng cách lấy năm hiện tại, còn tháng hiện tại thì cộng thêm 1 với thời gian là <strong>0h0m0s</strong>. Khi đó ta có thời gian là năm hiện tại, tháng tiếp theo của tháng hiện tại và ngày đầu tiên của tháng đó.</p>
+<p>Tiếp theo đi ra lệnh <span style="color: #0000ff;"><strong>strtotime </strong></span>bên ngoài thời gian sẽ bị trừ đi 1s, tức là khi này từ 0h <strong>của ngày đầu tiên của tháng tiếp theo đó</strong> sẽ bị trừ còn <strong>23h59m59s </strong>của ngày trước đó. Tự khắc thời gian sẽ bị lùi về 1 ngày cũng như lùi về 1 tháng. Như vậy kết quả xuất ra màn hình sẽ là ngày cuối cùng của tháng hiện tại.</p>
+<h4>Lấy ngày đầu tiên của tháng chỉ định.</h4>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">//first day of month
+function firstDay($month = '', $year = '')
+{
+    if (empty($month)) {
+      $month = date('m');
+   }
+   if (empty($year)) {
+      $year = date('Y');
+   }
+   $result = strtotime("{$year}-{$month}-01");
+   return date('Y-m-d', $result);
+}
+echo lastday('6','2020');</pre>
+<p>Ở hàm trên bạn sẽ thấy trong code có tạo 2 biến <strong>$year</strong> và <strong>$month</strong>. Đầu tiên sẽ kiểm tra nếu ko có 2 thông số truyền vào phù hợp thì hàm sẽ tự đông lấy năm và tháng thông qua thời gian của hiện tại. Sau đó ta sẽ gán biến <strong>$result</strong> bằng ngày đầu tiên của tháng trong năm hiện tại. Rồi ta xuất ra trong định dạng của hàm <strong>date()</strong></p>
+<p>Các bạn hãy tham khảo về hàm <strong>strtotime()</strong> ở mục bên dưới để hiểu hơn nhé.</p>
+<h3 id="load-h3-0"><span style="color: #ff0000;"><strong>Hàm strtotime() xử lý ngày tháng trong PHP</strong></span></h3>
+<p>Hàm này giúp tạo ra một kiểu định dạng thời gian theo kiểu INT từ một chuỗi.</p>
+<p>Trường hợp này được sử dụng nhiều khi lấy dữ liệu từ MySQL với định dạng là <strong>datetime</strong>.</p>
+<p><span style="color: #0000ff;"><strong>cú pháp: strtotime($time)</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">echo date('d/m/Y',strtotime('23-02-2020'));</pre>
+<p>Công dụng của hàm này chưa phải chỉ mỗi như vậy. Nó còn dùng để thực hiện một số hàm nâng cao khác, ví dụ như hàm lấy ngày cuối , ngày đầu trong tháng đã được giới thiệu ở phần trên.</p>
+<h4><strong>Phép toán với hàm <span style="color: #0000ff;">strtotime</span></strong></h4>
+<h5><span style="font-size: 16px;">Bắt đầu từ thời điểm nào đó trong quá khứ hoặc tương lai.</span></h5>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$date = strtotime('+1 day',strtotime('2020-02-23'));    //+ tính từ ngày nào đó.
+echo date("d/m/Y", $date);
+//output: 24/02/2020
+
+$date2 = strtotime('-2 day',strtotime('2020-02-23'));    //- tính từ ngày nào đó.
+echo date("d/m/Y", $date2);
+//output: 21/02/2020
+?&gt;</pre>
+<h5><span style="font-size: 16px;">Cộng 1 tháng tính từ thời điểm hiện tại.</span></h5>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+echo date( "Y-m-d", strtotime( "2020-02-23 +1 month" ) );   
+//output: 2020-03-23
+?&gt;</pre>
+<h5><span style="font-size: 16px;"><strong>Cộng gộp 2 thời gian khác nhau</strong></span></h5>
+<p>Áp dụng từ việc công trừ ngày hoặc tháng từ 2 ví dụ trên, ta có thể sử dụng phương pháp đó để cộng dồn 2 thời gian khác nhau lại với nhau theo hàm bên dưới.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php 
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+function add2times($hour_one,$hour_two){
+    
+    $h =  strtotime($hour_one);
+    $h2 = strtotime($hour_two);
+ 
+    $minute = date("i", $h2); //gán phút của giờ thứ 2
+    $second = date("s", $h2);//gán giây của giờ thứ 2
+    $hour = date("H", $h2);//gán giờ của giờ thứ 2
+ 
+    //lấy giấy, phút, giờ của giờ thứ 1 cộng cho giờ thứ 2 bằng phép cộng dồn với hàm strtotime()
+    $convert = strtotime("+$minute minutes", $h); //biến $minute là phút của giờ thứ 2
+    $convert = strtotime("+$second seconds", $convert); //biến $second là giây của giờ thứ 2
+    $convert = strtotime("+$hour hours", $convert);//biến $hour là giờ của giờ thứ 2
+    echo date('H:i:s', $convert);
+}
+add2times(date('H:m:s'),"8:10:56");
+?&gt;</pre>
+<p>Hàm <span style="color: #0000ff;"><strong>strtotime </strong></span>này có thể sau này mình sẽ viết một bài riêng để nói chuyên về nó sau vì hàm này được dùng để tính toán và ứng dụng rất nhiều.</p>
+<h3><span style="color: #ff0000;"><strong>So sánh sự chệnh lệch giữa 2 ngày</strong></span></h3>
+<p>trong trường hợp so sánh độ chênh lệch của 2 ngày ta dùng hàm <strong>diff()</strong>.</p>
+<p><span style="color: #0000ff;"><strong>$date1-&gt;diff($date2);</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$t1=new DateTime('2020-02-23 17:0:0');
+$t2=new DateTime('2020-02-24 18:1:50');
+$ss=$t1-&gt;diff($t2);
+var_dump($ss);    
+/*object(DateInterval)[3]
+  public 'y' =&gt; int 0
+  public 'm' =&gt; int 0
+  public 'd' =&gt; int 1
+  public 'h' =&gt; int 1
+  public 'i' =&gt; int 1
+  public 's' =&gt; int 50
+  public 'f' =&gt; float 0
+  public 'weekday' =&gt; int 0
+  public 'weekday_behavior' =&gt; int 0
+  public 'first_last_day_of' =&gt; int 0
+  public 'invert' =&gt; int 0
+  public 'days' =&gt; int 1
+  public 'special_type' =&gt; int 0
+  public 'special_amount' =&gt; int 0
+  public 'have_weekday_relative' =&gt; int 0
+  public 'have_special_relative' =&gt; int 0*/
+//từ kết quả var_dump trên ta thấy độ chênh lệch là 1 ngày 1h 1 phút và 50 giây
+?&gt;</pre>
+<h3><span style="color: #ff0000;"><strong>Kiểm tra tính hợp lệ của ngày tháng.</strong></span></h3>
+<p>Để kiểm tra tính hợp lệ về định dạng cho ngày tháng ta dùng hàm <strong>checkdate</strong>. Kết quả đúng sẽ trả về true, sai sẽ trả về false</p>
+<p>Cú pháp: <span style="color: #0000ff;"><strong>checkdate($mouth, $day, $year);</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+var_dump(checkdate(02, 30, 2020)); //output: false
+var_dump(checkdate(2, 23, 2020)); //output: true
+?&gt;</pre>
+<h2><strong>Kết thúc</strong></h2>
+<p>Qua bài viết trên mình đã liệu kê một số phương pháp, một số hàm cần thiết để xử lý thời gian date/time trong PHP.</p>
+<p>Tuỳ vào mỗi trường hợp và tính đơn giản của bài toán mà ta sẽ phải áp dụng các hàm tính toán ngày thang dạng nâng cao nói trên theo cách phù hợp nhất. Vấn đề này các bạn cần làm nhiều bài tập thì sẽ tự  lựa chọn phù hợp được.</p>
+<p>Mỗi bài viết về kiến thức học PHP của mình đều có thể chưa hoàn toàn đầy đủ, cho nên mong các bạn hãy tra google khi tham khảo và mong bạn có thể gửi lại comment bổ sung bên dưới để mình có thể hoàn thiện lại bài viết hơn. Cảm ơn các bạn!</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li>
+<p class="post-title single-post-title entry-title"><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 10: Mảng (Array) Trong PHP</a></strong></p>
+</li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">Bài 15: Session trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/" target="_blank" rel="noopener noreferrer">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2049"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">2</strong>
+        <span class="kksr-muted">
+            votes        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/">Bài 17: Xử lý date time ngày tháng trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/bai-17-xu-ly-date-time-ngay-thang-trong-php/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Bài 16: Các hàm xử lý và làm việc với file trong PHP</title>
+		<link>https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/</link>
+				<comments>https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/#respond</comments>
+				<pubDate>Sat, 22 Feb 2020 09:39:45 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Khoá Học]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2040</guid>
+				<description><![CDATA[<p>Bài viết này sẽ xoay quanh về nội dung của các hàm xử lý và làm việc với file trong PHP.  Đối với một ngôn ngữ lập trình, làm việc với file và thư mục là điều bắt buộc mà không thể tránh khỏi. Vấn đề xử lý file trong PHP rất quan trọng khi [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Bài viết này sẽ xoay quanh về nội dung của các hàm xử lý và làm việc với file trong PHP.  Đối với một ngôn ngữ lập trình, làm việc với file và thư mục là điều bắt buộc mà không thể tránh khỏi. Vấn đề xử lý file trong PHP rất quan trọng khi các bạn muốn làm một số chức năng như <strong>cache</strong> hay <strong>log file</strong> nhằm giúp ứng dụng web chạy nhanh hơn,&#8230;</p>
+<figure id="attachment_2047" aria-describedby="caption-attachment-2047" style="width: 482px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/ham-xu-ly-file-trong-php.png"><img class="size-full wp-image-2047" src="https://tanhongit.com/wp-content/uploads/2020/02/ham-xu-ly-file-trong-php.png" alt="ham xu ly file trong php" width="482" height="271" srcset="https://tanhongit.com/wp-content/uploads/2020/02/ham-xu-ly-file-trong-php.png 482w, https://tanhongit.com/wp-content/uploads/2020/02/ham-xu-ly-file-trong-php-300x169.png 300w, https://tanhongit.com/wp-content/uploads/2020/02/ham-xu-ly-file-trong-php-480x271.png 480w" sizes="(max-width: 482px) 100vw, 482px" /></a><figcaption id="caption-attachment-2047" class="wp-caption-text">Các hàm xử lý và làm việc với file trong PHP</figcaption></figure>
+<p>Việc nắm vững kiến thức về xử lý file và quyền hạn của file, thư mục khi học PHP không những giúp bạn dễ dàng lưu trữ thông tin cho website mà còn giúp bạn tăng tính bảo mật cho các file và thư mục quan trọng.</p>
+<p>Quá trình làm việc với một file trong PHP diễn ra như sau: <strong>Mở file –&gt; Thao tác (Đọc, Ghi ) –&gt; Đóng file. </strong></p>
+<h2><span style="color: #0000ff;"><strong>Các loại File được hỗ trợ trong PHP</strong></span></h2>
+<ul>
+<li>File quản lý hệ thống</li>
+<li>File logs</li>
+<li>Loại file.txt</li>
+<li>File.log</li>
+<li>File.csv</li>
+<li>Dạng file hình ảnh file.gif, file.jpg &#8230;</li>
+<li>File cài đặt chương trình (program.ini)</li>
+</ul>
+<h2><strong><span style="color: #0000ff;">Mở file với fopen</span></strong></h2>
+<p>Để mở file trong PHP chúng ta dùng hàm <strong>fopen</strong> với cú pháp:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">fopen($path, $mode);</pre>
+<p>Trong đó:</p>
+<ul>
+<li><strong>$path</strong> là đường dẫn đến file các bạn muốn mở.</li>
+<li><strong>$mode</strong> là thuộc tính bao gồm các quyền hạn truy cập vào file.</li>
+</ul>
+<p>Danh sách ký hiệu thuộc tính <strong>$mode</strong> gồm quyền hạn truy cập vào file.</p>
+<table style="width: 92.1285%;" border="1" cellspacing="0" cellpadding="4">
+<thead>
+<tr>
+<th style="width: 17.4742%;" scope="col"><span style="color: #0000ff;">Mode</span></th>
+<th style="width: 82.448%;" scope="col"><span style="color: #0000ff;">Chú thích</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 17.4742%;"><strong>r</strong></td>
+<td style="width: 82.448%;">Chỉ được đọc (Read only)</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>r+</strong></td>
+<td style="width: 82.448%;">Được quyền đọc và ghi (Read + write)</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>w</strong></td>
+<td style="width: 82.448%;">Chỉ được viết (write only)</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>x</strong></td>
+<td style="width: 82.448%;">Tạo file mới chỉ để ghi.</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>w+</strong></td>
+<td style="width: 82.448%;">Được quyền đọc và viết (write + read). Nếu file này tồn tại thì nội dung cũ sẽ bị xóa đi và ghi lại nội dung mới, còn nếu file chưa tồn tại thì nó tạo file mới.</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>a</strong></td>
+<td style="width: 82.448%;">Được quyền chỉ để viết và nếu file đã tồn tại nó sẽ ghi tiếp nội dung phía dưới, ngược lại nếu file không tồn tại nó tạo file mới.</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>a+</strong></td>
+<td style="width: 82.448%;">Được quyền cả viết lẫn đọc. Nếu file tồn tại nó sẽ ghi tiếp nội dung phía dưới, ngược lại nếu file không tồn tại nó tạo file mới</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>x+</strong></td>
+<td style="width: 82.448%;">Quyền tạo file mới để đọc và ghi.</td>
+</tr>
+<tr>
+<td style="width: 17.4742%;"><strong>b</strong></td>
+<td style="width: 82.448%;">Mở dưới dạng chế độ binary</td>
+</tr>
+</tbody>
+</table>
+<p>Hàm<strong> fopen() </strong>sẽ mở một file dựa vào đường dẫn truyền vào. Nếu truyền vào một URL, hàm sẽ sẽ tìm kiếm một trình xử lý giao thức(<strong>wrapper</strong>) cho <strong>URL</strong> đó, nếu không có trính xử lý nào đươc cung cấp, nó sẽ cảnh báo cho người dùng và sau đó tiếp tục như đối với các file bình thường.</p>
+<p><strong>Ví dụ:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$open = @fopen('data.txt', 'r'); // dùng @ đặt trước hàm fopen để ngăn chặn thông báo lỗi khi truyền sai đường dẫn file
+if (!$open)
+    echo "Mở file không thành công";
+else
+    echo "Mở file thành công";
+?&gt;</pre>
+<h2><strong><span style="color: #0000ff;">Đọc File trong PHP</span></strong></h2>
+<p>Có 3 cách đọc file thông thường trong PHP đó là đọc từng dòng, đọc từng ký tự và đọc hết file. Chúng ta sẽ đi vào từng cách đọc trên nhé!</p>
+<h3>Sử dụng hàm <span style="color: #0000ff;"><strong>feof </strong><span style="color: #000000;">trong đọc file</span></span></h3>
+<p>Trước khi tìm hiểu các cách đọc file trong PHP mình xin giới thiệu các bạn hàm <span style="color: #0000ff;"><strong>feof()</strong></span>.</p>
+<p>Hàm này có tác dụng đặt trong vòng lặp để sau khi đọc xong nó sẽ chuyển sang dòng mới hoặc ký tự mới đối với từng trường hợp đọc file.</p>
+<p>Hàm <strong>feof()</strong> hữu ích khi lặp lại những dữ liệu không xác định được độ dài.</p>
+<h3><strong>Đọc file từng dòng</strong></h3>
+<p>Để đọc file từng dòng ta dùng hàm <span style="color: #0000ff;"><strong>fgets($fp)</strong></span>.</p>
+<p>Ở cách này trước tiên chúng ta sẽ dùng <span style="color: #0000ff;"><strong>feof</strong> </span>để sau khi đọc xong nó sẽ chuyển sang dòng mới, và dùng hàm <span style="color: #0000ff;"><strong>fgets</strong> </span>để in ra từng dùng của file.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "r");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    echo 'Mở file thành công &lt;br&gt;';
+    // Lặp qua từng dòng để đọc
+    while(!feof($fp))
+    {
+        echo fgets($fp);
+    }
+}
+?&gt;</pre>
+<p>Ở phương pháp đọc file theo từng dòng này, ngoài cách duyệt từng dòng bằng việc dùng hàm <span style="color: #0000ff;"><strong>feof </strong></span>trong vòng lặp <strong>while</strong> như trên thì ta còn có một cách khác đó là <strong>chuyển file sang dạng mảng với mỗi phần tử trong mảng là 1 dòng của file</strong>, sau đó chỉ cần duyệt mảng và xuất ra màn hình.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">$array = @file('demo.txt'); // chuyển đổi file sang mảng
+foreach ($array as $value) {
+    echo $value;
+}</pre>
+<p><strong>Trong đó:</strong> Hàm <code>file()</code> đọc nội dung của file và đưa vào một mảng. Mỗi phần tử của mảng tương ứng với một dòng của file.</p>
+<h3><strong>Đọc file từng ký tự</strong></h3>
+<p>Để đọc file từng dòng ta dùng hàm <span style="color: #0000ff;"><strong>fgetc($fp)</strong></span>.</p>
+<p>Ở cách này trước tiên chúng ta sẽ dùng <span style="color: #0000ff;"><strong>feof</strong> </span>để sau khi đọc xong nó sẽ chuyển sang dòng mới, và dùng hàm <span style="color: #0000ff;"><strong>fgetc</strong> </span>để in ra từng dùng của file.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "r");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    echo 'Mở file thành công &lt;br&gt;';
+    // Lặp qua từng ký tự để đọc
+    while(!feof($fp))
+    {
+        echo fgetc($fp);
+    }
+}
+?&gt;</pre>
+<h3><strong>Đọc hết file với fread</strong></h3>
+<p>Thông số trong hàm <strong>fread()</strong> chứa tên của file dùng để đọc dữ liệu và thông số thứ hai là một số lượng bytes nhất định để đọc dữ liệu.</p>
+<p>Cú pháp: <span style="color: #0000ff;"><strong>fread($file,$filesize)</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "r");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    echo 'Mở file thành công &lt;br&gt;';
+    echo fread($file, filesize('demo.txt'));
+} ?&gt;</pre>
+<h2><span style="color: #0000ff;"><strong>Ghi, Chèn dữ liệu vào file trong PHP</strong></span></h2>
+<p>Để ghi nội dung vào file ta dùng hàm <strong><span class="article_highlight">fwrite($fp, $content)</span></strong> trong đó <strong>$fp</strong> là đối tượng trả về lúc mở file, còn <strong>$content</strong></p>
+<p>Để ghi file thì bắt buộc file của bạn phải được mở ở chế độ mode có cho phép ghi file và tiếp đó dùng hàm <strong><span style="color: #0000ff;"><code>fwrite</code> </span></strong>để ghi dữ liệu.</p>
+<p>Vì vậy mà việc ghi file sẽ phụ thuộc vào lúc bạn mở file như thế nào. Ví dụ lúc bạn mở file ghi đè thì lúc ghi file nó sẽ ghi đè, lúc bạn mở file ghi kiểu append thì lúc ghi file nó sẽ thêm xuống cuối file, nếu bạn mở file chỉ cho đọc thì bạn không thể ghi file được.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "w");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    echo 'Mở file thành công &lt;br&gt;';
+    fwrite($fp,'Đã mở file thành công, hãy tiếp tục thao tác mới');
+}
+?&gt;</pre>
+<h2 id="goto-h2-3" class="ads_displayed" data-stt="3"><span style="color: #0000ff;"><strong>Đóng File</strong></span></h2>
+<p>Quá trình làm việc với một file trong PHP diễn ra như sau: <strong>Mở file –&gt; Thao tác (Đọc, Ghi ) –&gt; Đóng file. </strong>Quy trình này là mặc định đối với nhiều ngôn ngữ lập trình khác nhau, chúng ta luôn phải tuân thủ theo quy trình đã mở thì phải đóng.</p>
+<p>Việc mở file để sử dụng mà không đóng file rất nguy hiểm, vì thế sau khi sử dụng xong bạn nên đóng file để an toàn hơn và thu hồi tài nguyên hệ thống.</p>
+<p>Để đóng file ta dùng hàm <strong>fclose($fp). </strong>Trong đó <strong>$fp</strong> là đối tượng trả về lúc bạn mở file.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "w");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    echo 'Mở file thành công &lt;br&gt;';
+    fwrite($fp,'Đã mở file thành công, hãy tiếp tục thao tác mới');
+    fclose($fs); //đóng file
+}
+?&gt;</pre>
+<p>Vì thế những ví dụ ở phần đọc file bạn đều phải bổ sung thêm hàm đóng file vào thì code mới đúng và hoàn chỉnh các bạn nhé!</p>
+<h2 id="12-cac-ham-xu-li-file-khac"><strong><span style="color: #0000ff;">Các hàm xử lí file khác</span></strong></h2>
+<h3 id="13-kiem-tra-file-co-ton-tai-khong"><strong>Kiểm tra file có tồn tại không?</strong></h3>
+<p>Trong PHP có cung xấp cho chúng ta hàm <span style="color: #0000ff;"><strong><code>file_exists($path)</code></strong></span> để kiểm tra sự tồn tại của file, hàm sẽ trả về <code>true</code> nếu file tồn tại và ngược lại <code>false</code> nếu không. Trong đó $path là đường dẫn đến file cần test.</p>
+<p>Bạn cũng có thể sử dụng hàm này khi bạn tạo ra một tập tin mới và bạn muốn đảm bảo rằng các tập tin chưa từng tồn tại trên server.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+if (file_exists('STDIO.txt'))
+{
+    echo 'File exists';
+}
+?&gt;</pre>
+<h3 id="load-h3-4"><strong>Kiểm tra cấp quyền với file</strong></h3>
+<p>Để kiểm tra file có được cấp quyền gì không thì chúng ta dùng hàm <strong><code>is_writable()</code></strong> . Hàm này sẽ trả về true nếu được quyền ghi và ngược lại false nếu không được quyền ghi.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+$fp = @fopen('demo.txt', "w");
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    if(is_writable('demo.txt')){       
+        fwrite($fp, 'Được phép ghi');}
+    else{
+        echo 'Không Được phép ghi';}
+    fclose($fp);
+}
+</pre>
+<h3 id="load-h3-5"><strong>Lấy nội dung của file hàm file_get_contents</strong></h3>
+<p>Cú pháp: <strong>file_get_contents($path)</strong></p>
+<p>Trong đó <strong>$path</strong> là đường dẫn đến file, hoặc 1 đường link URL dẫn tới trang web chứa file.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">echo file_get_contents('demo.txt');</pre>
+<h3><strong>Đổi tên file</strong></h3>
+<p>Để đổi tên file ta dùng hàm <strong><code>rename($oldname, $newname)</code>,</strong> trong đó <strong><code>$oldname</code></strong> là đường dẫn đến file cần đổi tên, <strong><code>$newname</code></strong> là đường dẫn mới có kèm tên file cần đổi . Nếu bạn chỉ muốn đổi tên thôi thì đường dẫn của cả 2 biến giống nhau, chỉ khác nhau ở cái tên file.</p>
+<p>Nếu tên file mới bị trùng thì file đó sẽ bị ghi đè.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">rename('demo.txt', 'newdemo.txt');</pre>
+<h3 id="goto-h3-5"><strong>Copy file</strong></h3>
+<p><strong>Cú pháp</strong>: <strong><code>copy($source, $newpath)</code></strong></p>
+<p>Trong đó <strong><code>$source</code></strong> là path file cần copy và <strong><code>$newpath</code></strong>là path file cần di chuyển tới.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">copy('demo.txt', 'newdemo.txt');</pre>
+<h3 id="goto-h3-6"><strong>Xóa file</strong></h3>
+<p>Ta dùng hàm <strong><code>unlink($path)</code></strong> để xóa file. Trong đó <strong><code>$path</code></strong> là đường dẫn đến file cần xóa.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+if (file_exists('demo.txt'))
+{
+    if(unlink('demo.txt'))
+        echo 'Xoá thành công';
+    else
+        echo 'Không thành công';
+}
+?&gt;</pre>
+<h3><strong>Ghi toàn bộ nội dung chuỗi ra file</strong></h3>
+<p>Đây là cách ghi toàn bộ một chuỗi ra file ngắn gọn (thay cho việc phải sử dụng fopen, fread, fclose).</p>
+<p><strong>Cú pháp</strong>:<span style="color: #0000ff;"> <strong>file_put_contents($path, $contents)</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">file_put_contents('demo.txt', 'đây là nội dung sẽ được ghi ra file');</pre>
+<h3 id="goto-h3-8"><strong>Tạo một thư mục ( folder) mới</strong></h3>
+<p><strong>Cú pháp</strong>: <span style="color: #0000ff;"><strong>mkdir($path)</strong></span></p>
+<p>Trong đó <strong>$path</strong> là đường dẫn đến folder cần tạo.</p>
+<p>Ví dụ:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">mkdir('webdevelopment/php/phpcanban');</pre>
+<div class="alert alert-warning"><span style="text-decoration: underline;"><strong>Lưu ý:</strong></span> tên folder cuối cùng lằn trong link chính là tên folder bạn cần tạo và tất cả các folder trước nó bạn chắc chắn là phải có, nếu không sẽ bị lỗi.</div>
+<div>Từ ví dụ trên ta sẽ nhận ra rằng ta đã phải có folder <strong>webdevelopment</strong> và trong nó là folder con có tên là <strong>php</strong> thì mới tạo thêm được.</div>
+<h3><strong>Kiểm tra sự tồn tại đường dẫn thư mục</strong></h3>
+<p>Cú pháp kiểm tra sự tồn tại của thư mục trong php là <span style="color: #0000ff;"><strong>is_dir(path)</strong></span></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">if(is_dir('phpcanban')){
+    echo 'Folder này hiện đang tồn Tại';
+}</pre>
+<h2><strong>Kết thúc</strong></h2>
+<p>Qua bài viết trên mình đã nói qua về những hàm cần thiết về xử lý file cần biết trong PHP, Các bạn hãy thao khảo tìm mốt số bài tập thực hành để nâng cao hiểu biết của bản thân hơn nhé!</p>
+<p>Ngoài ra còn rất nhiều hàm xử lý về file khác mà mình chưa nói tới, các bạn có thể tham khảo <strong><a href="https://www.w3schools.com/php/php_ref_filesystem.asp" target="_blank" rel="noopener noreferrer">tại đây</a></strong>.</p>
+<p>Bài viết tiếp theo mình sẽ sơ lược qua về vấn đề xử lý thời gian, ngày tháng trong PHP các bạn hãy đón đọc nhé!</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><strong><a href="https://tanhongit.com/vong-lap-foreach-trong-php/" target="_blank" rel="noopener noreferrer"> Bài 7: Vòng lặp Foreach trong PHP (Các loại vòng lặp phần 2)</a></strong></li>
+<li>
+<p class="post-title single-post-title entry-title"><a href="https://tanhongit.com/bai-9-ham-function-trong-php/" target="_blank" rel="noopener noreferrer"><strong>Bài 9: Hàm (Function) Trong PHP</strong></a></p>
+</li>
+<li>
+<p class="post-title single-post-title entry-title"><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 10: Mảng (Array) Trong PHP</a></strong></p>
+</li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-15-session-trong-php/" target="_blank" rel="noopener noreferrer">Bài 15: Session trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2040"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">1</strong>
+        <span class="kksr-muted">
+            vote        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/">Bài 16: Các hàm xử lý và làm việc với file trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/bai-16-cac-ham-xu-ly-va-lam-viec-voi-file-trong-php/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Vai trò Apache và PHP Hoạt Động Cùng Nhau Như Thế Nào</title>
+		<link>https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/</link>
+				<comments>https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/#respond</comments>
+				<pubDate>Wed, 19 Feb 2020 12:35:47 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2009</guid>
+				<description><![CDATA[<p>Hầu hết chúng ta đều biết Apache là một phần mềm web server trong khi đó PHP là một ngôn ngữ kịch bản scripting language được sử dụng phổ biến trên server cùng với Apache. Tuy nhiên chính xác thì vai trò cũng như chức năng của Apache và PHP cụ thể như thế nào và chuyện gì xảy [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/">Vai trò Apache và PHP Hoạt Động Cùng Nhau Như Thế Nào</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Hầu hết chúng ta đều biết <strong><a href="https://tanhongit.com/apache-web-server-la-gi/" target="_blank" rel="noopener noreferrer">Apache<i class="fa fa-external-link-alt ml-1"></i> </a></strong>là một phần mềm web server trong khi đó PHP<i class="fa fa-external-link-alt ml-1"></i> là một ngôn ngữ kịch bản <strong>scripting language</strong> được sử dụng phổ biến trên server cùng với <strong>Apache</strong>. Tuy nhiên chính xác thì vai trò cũng như chức năng của Apache và PHP cụ thể như thế nào và chuyện gì xảy ra nếu chỉ server chỉ được cài đặt <strong>Apache</strong> hoặc <strong>PHP</strong>?</p>
+<figure id="attachment_2011" aria-describedby="caption-attachment-2011" style="width: 737px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/apache-and-php.png"><img class="size-full wp-image-2011" src="https://tanhongit.com/wp-content/uploads/2020/02/apache-and-php.png" alt="apache and php" width="737" height="258" srcset="https://tanhongit.com/wp-content/uploads/2020/02/apache-and-php.png 737w, https://tanhongit.com/wp-content/uploads/2020/02/apache-and-php-300x105.png 300w, https://tanhongit.com/wp-content/uploads/2020/02/apache-and-php-585x205.png 585w" sizes="(max-width: 737px) 100vw, 737px" /></a><figcaption id="caption-attachment-2011" class="wp-caption-text">Apache và PHP Hoạt Động Cùng Nhau Như Thế Nào</figcaption></figure>
+<p>Trước tiên bạn cần nắm rõ được một request khi gửi tới server sẽ được xử lý như thế nào.</p>
+<h2>Vai Trò Của Apache</h2>
+<p>Khi một HTTP request được gửi tới server máy chủ thì nó sẽ được xử lý trước tiên bởi một phần mềm được gọi là <strong>HTTP web server</strong> (hay thường gọi vắn tắt là phần mềm web server hoặc web server) được cài đặt trên server. Hiện nay Apache là một trong những phần mềm web server được sử dụng phổ biến trên thế giới tuy nhiên không phải là phần mềm web server duy nhất, ngoài <strong>Apache</strong> chúng ta còn có thể sử dụng phần mềm web server khác cũng khá phổ biến có tên là <strong>NGINX</strong> (đọc là en-zin-iks).</p>
+<p>Ví dụ sử dụng client (chẳng hạn như trình duyệt web) chúng ta thực hiện gửi một request tới server với địa chỉ <span style="color: #0000ff;"><strong><code>http://localhost/index.html</code></strong></span>, máy chủ khi nhận được request sẽ chuyển request này cho phần mềm web server để xử lý (trường hợp của chúng ta là <a href="https://tanhongit.com/apache-web-server-la-gi/">Apache</a>). Apache sẽ tìm kiếm tập tin <span style="color: #0000ff;"><strong><code>index.html</code></strong></span> trong thư mục gốc và trả về cho client. Trường hợp không tìm thấy tập tin <span style="color: #0000ff;"><strong><code>index.html</code></strong></span> Apache sẽ trả về lỗi <strong>404 not found</strong>.</p>
+<p><a href="https://imgur.com/adNbYuU.png"><img class="aligncenter size-full" src="https://imgur.com/adNbYuU.png" alt="vai trò của apache " width="512" height="265" /></a></p>
+<p>Tuy nhiên như bạn biết HTML là ngôn ngữ đánh dấu (<strong>markup language</strong>) và nó không thể thực hiện được các công việc như truy cập tới cơ sở dữ liệu, lưu trữ session, xử lý dữ liệu form&#8230; Để làm các công việc này chúng ta cần tới <strong>ngôn ngữ</strong> <strong>scripting như PHP (hoặc Ruby, Java&#8230;).</strong></p>
+<h2>Vai Trò Của PHP</h2>
+<p>PHP là ngôn ngữ lập trình kịch bản giúp thực hiện các tác vụ mạnh mẽ như đã đề cập ở trên. Tuy nhiên PHP lại không phải là một phần mềm <strong>web server</strong>, nói cách khác việc xử lý <strong>HTTP request</strong> gửi tới <strong>server</strong> cần được xử lý bởi <a href="https://tanhongit.com/apache-web-server-la-gi/" target="_blank" rel="noopener noreferrer"><strong>web server (Apache)</strong></a> như chúng ta đã tìm hiểu ở trên.</p>
+<p>Để PHP có thể tham gia vào quá trình xử lý <strong>request</strong> của <strong>web server (Apache)</strong> thì chúng ta sẽ cần tích hợp một thư viện có tên là mô-đun PHP <strong><span style="color: #0000ff;"><code>mod_php</code></span></strong> vào trong Apache web server.</p>
+<p><a href="https://imgur.com/eaHwMtT.png"><img class="size-full aligncenter" src="https://imgur.com/eaHwMtT.png" width="515" height="276" /></a></p>
+<p>Sau khi Apahce được tích hợp và kích hoạt <span style="color: #0000ff;"><strong><code>mod_php</code></strong></span> thì lúc này khi server nhận được một request gửi tới từ phía client với địa chỉ URL là <span style="color: #0000ff;"><strong><code>http://localhost/index.php</code></strong></span> nó vẫn sẽ chuyển request này cho Apache để xử lý như thường lệ. Tuy nhiên lúc này Apache nhận thấy tập tin <span style="color: #0000ff;"><strong><code>index.php</code></strong></span> là một tập tin PHP và do đó nó sẽ thông qua <span style="color: #0000ff;"><strong><code>mod_php</code></strong></span> để nhờ PHP xử lý tập tin <span style="color: #0000ff;"><strong><code>index.php</code></strong></span> này và trả về kết quả. Sau khi nhận được kết quả xử lý từ PHP, Apache lúc này mới chuyển trả kết quả về cho client.</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/apache-web-server-la-gi/" target="_blank" rel="noopener noreferrer"><strong>Apache là gì? Và Kiến thức về Apache Web Server</strong></a></li>
+<li><strong><a href="https://tanhongit.com/vong-lap-foreach-trong-php/" target="_blank" rel="noopener noreferrer">Bài 7: Vòng lặp Foreach trong PHP (Các loại vòng lặp phần 2)</a></strong></li>
+<li><strong><a title="Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP" href="https://tanhongit.com/bai-8-lenh-break-continue-va-cac-ham-function-exit-die-thuong-dung-trong-php/" target="_blank" rel="bookmark noopener noreferrer">Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2009"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 0px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <span class="kksr-muted">Rate this post</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/">Vai trò Apache và PHP Hoạt Động Cùng Nhau Như Thế Nào</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/vai-tro-apache-va-php-hoat-dong-cung-nhau-nhu-the-nao/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Mô hình Client-Server là gì và cách hoạt động Client-Server</title>
+		<link>https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/</link>
+				<comments>https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/#respond</comments>
+				<pubDate>Wed, 19 Feb 2020 12:22:49 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=2004</guid>
+				<description><![CDATA[<p>Mô hình client-server là một mô hình nổi tiếng trong mạng máy tính, được áp dụng rất rộng rãi và là mô hình của mọi trang web hiện có. Ý tưởng của mô hình này là máy con (đóng vài trò là máy khách) gửi một yêu cầu (request) để máy chủ (đóng vai trò [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/">Mô hình Client-Server là gì và cách hoạt động Client-Server</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><strong>Mô hình</strong> <strong>client-server</strong> là một mô hình nổi tiếng trong <strong>mạng máy tính</strong>, được áp dụng rất rộng rãi và là mô hình của mọi trang web hiện có. Ý tưởng của mô hình này là <strong>máy con (đóng vài trò là máy khách)</strong> gửi một <strong>yêu cầu (request)</strong> để <strong>máy chủ (đóng vai trò người cung ứng dịch vụ)</strong>, máy chủ sẽ xử lý và trả kết quả về cho máy khách.</p>
+<p>Trong mô hình này, chương trình ứng dụng được chia thành 2 thành phần: <strong class="emphasis">Server </strong>và <strong class="emphasis">Client. </strong><strong>Client</strong> hay còn gọi là máy khách, nó bao gồm máy tính và các thiết bị điện tử nói chung. <strong>Server</strong> hay còn gọi là máy chủ, là nơi cài đặt các chương trình dịch vụ và lưu trữ tài nguyên.</p>
+<figure id="attachment_2005" aria-describedby="caption-attachment-2005" style="width: 738px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/mo-hinh-client-sever.png"><img class="size-full wp-image-2005" src="https://tanhongit.com/wp-content/uploads/2020/02/mo-hinh-client-sever.png" alt="mo hinh client server" width="738" height="420" srcset="https://tanhongit.com/wp-content/uploads/2020/02/mo-hinh-client-sever.png 738w, https://tanhongit.com/wp-content/uploads/2020/02/mo-hinh-client-sever-300x171.png 300w, https://tanhongit.com/wp-content/uploads/2020/02/mo-hinh-client-sever-585x333.png 585w" sizes="(max-width: 738px) 100vw, 738px" /></a><figcaption id="caption-attachment-2005" class="wp-caption-text">Mô hình client &#8211; server</figcaption></figure>
+<p>Việc yêu cầu của máy khách, đáp ứng, xử lý, và phản hồi của máy chủ tạo thành một dịch vụ. Dịch vụ này hoạt động trên nền web nên nó được gọi là dịch vụ web (hay web service).</p>
+<p>Ngoài ra, việc giao tiếp giữa <strong>Client</strong> với <strong>Server</strong> phải dựa trên các giao thức chuẩn. Các giao thức chuẩn được sử dụng phổ biến nhất hiện nay là : giao thức TCP/IP, giao thức SNA của IBM, OSI, ISDN, X.25 hay giao thức LAN-to-LAN NetBIOS.</p>
+<h2><span style="color: #0000ff;"><strong>Vì sao các Website thường sử dụng mô hình client-server</strong></span></h2>
+<ul>
+<li>Dữ liệu và tài nguyên được tập trung lại và tăng tính toàn vẹn của các dữ liệu.</li>
+<li>Sự linh động trong việc mở rộng được hệ thống mạng.</li>
+<li>Không phụ thuộc vào cùng một nền tảng, chỉ cần chung một định dạng giao tiếp (<strong>protocol</strong>) là có thể hoạt động được.</li>
+</ul>
+<p>Chỉ có điều nhược điểm của mô hình này là <strong>tính an toàn và bảo mật các thông tin trên mạng</strong>. Do phải trao đổi các dữ liệu giữa hai máy ở hai khu vực khác nhau nên dễ dàng xảy ra hiện tượng thông tin trên mạng <strong>bị mất bí mật</strong> và từ đó vai trò của quản trị mạng trở nên quan trọng lên rất nhiều.</p>
+<h2><span id="Bang_so_sanh_mo_hinh_client_server_voi_cac_mo_hinh_khac" style="color: #0000ff;"><strong>Bảng so sánh mô hình client server với các mô hình khác</strong></span></h2>
+<table style="width: 92.1285%;">
+<tbody>
+<tr>
+<td style="width: 16.3424%;"><span style="font-size: 14px; color: #0000ff;"><strong>Mô hình mạng / tiêu chí đánh giá</strong></span></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px; color: #0000ff;"><strong>Client Server</strong></span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px; color: #0000ff;"><strong>Peer-to-Peer</strong></span></td>
+<td style="width: 25.4475%;"><span style="color: #0000ff;"><strong>Hybrid</strong></span></td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Khả năng bảo mật thông tin và độ an toàn</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Khả năng bảo mật và an toàn thông tin cao. Có thể điều chỉnh quyền truy cập thông tin.</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Khả năng bảo mật và an toàn thông tin kém. Phần lớn phụ thuộc vào mức độ quyền được chia sẻ.</span></td>
+<td style="width: 25.4475%;">Khả năng bảo mật và an toàn thông tin cao. Có thể điều chỉnh quyền truy cập thông tin.</td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Khả năng cài đặt</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Cài đặt khá khó khăn.</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Cài dặt dễ dàng.</span></td>
+<td style="width: 25.4475%;">Cài đặt khá khó khăn.</td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Yêu cầu về phần cứng và phần mềm</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Bao gồm:+ Máy chủ</span><span style="font-size: 14px;">+ Hệ điều hành</span></p>
+<p><span style="font-size: 14px;">+ Phần cứng</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Chỉ cần ít phần cứng bổ sung. Ngoài ra không cần máy chủ và hệ điều hành như 2 mô hình trên.</span></td>
+<td style="width: 25.4475%;">Bao gồm:+ Máy chủ+ Hệ điều hành</p>
+<p>+ Phần cứng</td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Yêu cầu về quản trị mạng</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Cần phải có quản trị mạng</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Không cần quản trị mạng</span></td>
+<td style="width: 25.4475%;">Cần phải có quản trị mạng</td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Có khả năng xử lý và lưu trữ tập trung không?</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Có</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Không</span></td>
+<td style="width: 25.4475%;">Không</td>
+</tr>
+<tr>
+<td style="width: 16.3424%;"><strong><span style="font-size: 14px;">Chi phí cài đặt</span></strong></td>
+<td style="width: 27.6265%;"><span style="font-size: 14px;">Chi phí cao</span></td>
+<td style="width: 30.5058%;"><span style="font-size: 14px;">Chi phí thấp</span></td>
+<td style="width: 25.4475%;">Chi phí thấp</td>
+</tr>
+</tbody>
+</table>
+<h2><span style="color: #0000ff;"><strong>Cách thức mô hình client server hoạt động như thế nào ?</strong></span></h2>
+<p>Quy trình hoạt đông được chia làm 2 bước:</p>
+<h3>Client</h3>
+<p>Các máy trạm trong mô hình này gọi là <strong>máy khách (client)</strong>. Đây là nơi tiếp nhận những thao tác yêu cầu từ người dùng và sau đó<strong>gởi các yêu cầu xử lý</strong> về <strong>máy chủ (server).</strong></p>
+<p>Phần phía Client là nơi trung gian tổ chức giao tiếp giữa người dùng với môi trường làm việc trên <strong>máy khách (client)</strong> và với phía Server. Sau khi tiếp nhận yêu cầu của người dùng, máy khách client sẽ thành lập các query string để gửi về phía Server.</p>
+<h3>Server</h3>
+<p>Phần phía Server <strong>quản lý các giao tiếp</strong> môi trường giữa <strong>Server</strong> và với các <strong>Client</strong>, tiếp nhận các yêu cầu dưới dạng các xâu ký tự (query string). Sau khi phân tích các query string được request từ máy khách client, phần phía Server sẽ xử lý dữ liệu và gửi kết quả trả lời về phía các Client.</p>
+<p>Sau đó sẽ hiện lên màn hình đến cho người dùng.</p>
+<h2><span id="Uu_diem_mo_hinh_client_server_la_gi" style="color: #0000ff;"><strong>Ưu điểm </strong><strong>mô hình client-server là gì?</strong></span></h2>
+<p>Ưu điểm của mô hình client server là với mô hình client server thì mọi thứ dường như đều nằm trên bàn của người sử dụng, nó có thể truy cập dữ liệu từ xa (bao gồm các công việc như gửi và nhận file, tìm kiếm thông tin,…) với nhiều dịch vụ đa dạng mà mô hình cũ không thể làm được.</p>
+<p>Mô hình <strong>client-server</strong> cung cấp một nền tảng lý tưởng cho phép tích hợp các kỹ thuật hiện đại như mô hình thiết kế hướng đối tượng, hệ chuyên gia, hệ thông tin địa lý (GIS)…</p>
+<h2><span id="Uu_diem_mo_hinh_client_server_la_gi" style="color: #0000ff;"><strong>Nhược điểm </strong><strong>mô hình client server là gì?</strong></span></h2>
+<p>Như đã nói ở các phần trên, nhược điểm duy nhất của mô hình này là <strong>tính an toàn và bảo mật các thông tin trên mạng</strong>. Do phải trao đổi các dữ liệu giữa hai máy ở hai khu vực khác nhau ở xa nhau nên dễ dàng xảy ra hiện tượng thông không được an toàn.</p>
+<h2><span id="Uu_diem_mo_hinh_client_server_la_gi" style="color: #0000ff;"><strong>Một số ví dụ về mô hình client server</strong></span></h2>
+<h3><strong>Mail Server </strong></h3>
+<p>Ở bên phía Client, người dùng soạn thảo Email và sẽ gửi đến Mail Server, phía bên Mail Server sẽ tiếp nhận và lưu trữ, tìm kiếm địa chỉ của mail được gửi đến và gửi đi.</p>
+<h3><strong>Web Server </strong></h3>
+<p>Lưu trữ các trang Web. khi người dùng ở phía máy Client nhập địa chỉ của trang web, Client sẽ gửi yêu cầu đến máy chủ Web và máy chủ Web sẽ gửi toàn bộ nội dung của trang web về cho phía Client.</p>
+<h3><strong>File Server </strong></h3>
+<p>Lưu trữ các tập tin. Nhận và truyền đi các tập tin về phía Client , người dùng có thể download – upload các tập tin lên Server qua Web browser hoặc là giao thức FTP</p>
+<h2><span style="color: #0000ff;"><b>Các cấu hình cơ sở dữ liệu Client/Server</b></span></h2>
+<p><span style="font-weight: 400;">Nhìn chung mọi ứng dụng cơ sở dữ liệu đều bao gồm các phần:</span></p>
+<ul>
+<li><span style="font-weight: 400;"><strong>Thành phần xử lý ứng dụng</strong> (Application processing components)</span></li>
+<li><span style="font-weight: 400;"><strong>Thành phần phần mềm cơ sở dữ liệu</strong> (Database software componets)</span></li>
+<li><span style="font-weight: 400;"><strong>Bản thân cơ sở dữ liệu</strong> (The database itself)</span></li>
+</ul>
+<p><span style="font-weight: 400;">Các mô hình về xử lý cơ sở dữ liệu khác nhau là bởi các trường hợp của 3 loại thành phần nói trên định vị ở đâu. Bài viết này này xin giới thiệu 5 mô hình kiến trúc dựa trên cấu hình phân tán về truy nhập dữ liệu của hệ thống máy tính Client/Server.</span></p>
+<ol>
+<li><strong>Mô hình cơ sở dữ liệu tập trung (Centralized database model)</strong></li>
+<li><strong>Mô hình cơ sở dữ liệu theo kiểu file &#8211; server (File &#8211; server database model)</strong></li>
+<li><strong>Mô hình xử lý từng phần cơ sở dữ liệu (Database extract processing model)</strong></li>
+<li><strong>Mô hình cơ sở dữ liệu Client/Server (Client/Server database model)</strong></li>
+<li><strong>Mô hình cơ sở dữ liệu phân tán (Distributed database model)</strong></li>
+</ol>
+<p>Ngoài ra ta còn có m<span style="font-weight: 400;">ột mô hình ngược lại là mô hình <strong>master-slaver</strong>, trong đó máy chủ (đóng vai trò ông chủ) sẽ gửi dữ liệu đến máy con (đóng vai trò nô lệ) bất kể máy con có cần hay không.</span></p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><strong><a href="https://tanhongit.com/vong-lap-foreach-trong-php/" target="_blank" rel="noopener noreferrer"> Bài 7: Vòng lặp Foreach trong PHP (Các loại vòng lặp phần 2)</a></strong></li>
+<li><strong><a title="Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP" href="https://tanhongit.com/bai-8-lenh-break-continue-va-cac-ham-function-exit-die-thuong-dung-trong-php/" target="_blank" rel="bookmark noopener noreferrer">Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="2004"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">1</strong>
+        <span class="kksr-muted">
+            vote        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/">Mô hình Client-Server là gì và cách hoạt động Client-Server</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/mo-hinh-client-server-la-gi-va-cach-hoat-dong-client-server/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Bài 15: Session trong PHP</title>
+		<link>https://tanhongit.com/bai-15-session-trong-php/</link>
+				<comments>https://tanhongit.com/bai-15-session-trong-php/#respond</comments>
+				<pubDate>Tue, 18 Feb 2020 17:21:21 +0000</pubDate>
+		<dc:creator><![CDATA[Tân Hồng IT]]></dc:creator>
+				<category><![CDATA[Back-End]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[Kiến thức]]></category>
+		<category><![CDATA[Kiến thức lập trình]]></category>
+		<category><![CDATA[Learn PHP]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PHP căn bản]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Code Web]]></category>
+		<category><![CDATA[Kiến Thức Lập Trình]]></category>
+		<category><![CDATA[Website]]></category>
+
+		<guid isPermaLink="false">https://tanhongit.com/?p=1985</guid>
+				<description><![CDATA[<p>Ở bài 14 mình đã cho các bạn biết về khái niệm và cách thiết lập cookie trong PHP, tiếp tục series học PHP căn bản, sang bài này mình sẽ giới thiệu Session trong PHP là gì, hiểu nó và cách sử dụng nó như thế nào! Session là một biến được sử dụng [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-15-session-trong-php/">Bài 15: Session trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p>Ở <strong><a href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">bài 14</a></strong> mình đã cho các bạn biết về khái niệm và cách thiết lập cookie trong PHP, tiếp tục series học PHP căn bản, sang bài này mình sẽ giới thiệu Session trong PHP là gì, hiểu nó và cách sử dụng nó như thế nào!</p>
+<p>Session là một biến được sử dụng để <strong>lưu lại dữ liệu của người sử dụng website hoặc là lưu trữ tùy chọn cấu hình hệ thống cho người dùng</strong>. Không giống với cookie, biến session được lưu trên một tập tin trên máy chủ.</p>
+<figure id="attachment_1996" aria-describedby="caption-attachment-1996" style="width: 482px" class="wp-caption aligncenter"><a href="https://tanhongit.com/wp-content/uploads/2020/02/session-trong-php.png"><img class="size-full wp-image-1996" src="https://tanhongit.com/wp-content/uploads/2020/02/session-trong-php.png" alt="session trong php" width="482" height="271" srcset="https://tanhongit.com/wp-content/uploads/2020/02/session-trong-php.png 482w, https://tanhongit.com/wp-content/uploads/2020/02/session-trong-php-300x169.png 300w, https://tanhongit.com/wp-content/uploads/2020/02/session-trong-php-480x271.png 480w" sizes="(max-width: 482px) 100vw, 482px" /></a><figcaption id="caption-attachment-1996" class="wp-caption-text">Bài 15: Session trong PHP</figcaption></figure>
+<h2><strong><span style="color: #0000ff;">Các ứng dụng thường dùng đối với Session</span></strong></h2>
+<ul>
+<li>Session dùng theo dõi và kết nối giữa các phiên làm việc của người dùng</li>
+<li>Session dùng để tạo các ứng dụng giỏ hàng, đăng nhập,&#8230;</li>
+<li><span class="fontstyle0">Đ</span><span class="fontstyle1">ế</span><span class="fontstyle0">m s</span><span class="fontstyle1">ố </span><span class="fontstyle0">ng</span><span class="fontstyle1">ườ</span><span class="fontstyle0">i dùng đang online,&#8230;</span></li>
+<li>Bạn muốn truyền giá trị từ trang này sang trang khác.</li>
+<li>Thay thế cho cookie nếu trình duyệt đó không hỗ trợ cookies.</li>
+</ul>
+<h2><strong><span style="color: #0000ff;">Quy cách mà Session hoạt động</span></strong></h2>
+<p>Khi một session bắt đầu, những điều sau sẽ xảy ra:</p>
+<ul class="list">
+<li>Đầu tiên, PHP <strong>tạo một định danh duy nhất cho session cụ thể đó</strong>, định danh này là <strong>chuỗi kí tự ngẫu nhiên của 32 số hexa</strong>, như <strong>3c7foj34c3jj973hjkop2fc937e3443</strong>.</li>
+<li><strong>Một cookie</strong> được gọi là <b>PHPSESSID</b> sẽ được gửi tự động đến máy tính người dùng để lưu trữ chuỗi định danh session duy nhất ở trên.</li>
+<li>Một file được tạo tự động trên Server trong thư mục tạm thời đã được chỉ định và nó mang tên của định danh duy nhất và được bắt đầu bằng sess_. Ví dụ như: <strong>sess_3c7foj34c3jj973hjkop2fc937e3443</strong>.</li>
+</ul>
+<p>Khi <strong>PHP script</strong> muốn lấy giá trị từ một biến session, PHP tự động lấy chuỗi định danh session duy nhất này từ <strong>PHPSESSID cookie</strong>, sau đó tìm file mang tên đó trong thư mục tạm thời của nó, một xác thực có thể được hoàn thành bằng việc so sánh các giá trị đó.</p>
+<p>Một session kết thúc khi người dùng <strong>tắt trình duyệt</strong> hoặc <strong>sau khi rời khỏi site</strong> này, Server sẽ chấm dứt session sau một thời gian đã định trước, thường là 30 phút.</p>
+<h2 id="goto-h3-0"><strong><span style="color: #0000ff;">Đăng ký bắt đầu tạo một session</span></strong></h2>
+<p>Trước khi bạn sử dụng session bạn phải khai báo cho PHP biết bằng cách đặt dòng lệnh <strong><span style="color: #0000ff;"><code>session_start()</code></span></strong> phía trên đầu mỗi file. Nếu bạn dùng nhiều file <strong>include</strong> lẫn nhau thì đặt nó ở file chính.</p>
+<p>Đầu tiên hàm này kiểm tra một session đã được bắt đầu hay chưa, nếu chưa thì nó sẽ bắt đầu một session. Luôn nhớ rằng lời gọi hàm <b>session_start()</b> này được <strong>đề nghị đặt ở đầu của mỗi file</strong> (trước các thẻ html).</p>
+<p>Các biến session được lưu trữ trong mảng liên hợp là <b>$_SESSION[&#8221;]</b>. Các biến này có thể được truy cập trong suốt vòng đời của một phiên session.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+// bắt đầu session (luôn đặt ở đầu file)
+session_start();
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;?php
+// Tạo biến session
+$_SESSION["user_id"] = "123456";
+$_SESSION["username"] = "tanhongit";
+echo "Các biến session đã được tạo.";
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php	//Start the session	
+session_start();	
+?&gt;	
+&lt;!DOCTYPE html&gt;	
+&lt;html&gt;	
+&lt;body&gt;	
+&lt;?php	
+//Set session variables	
+$_SESSION["favcolor"] = "green";	
+?&gt;</pre>
+<h2><span style="color: #0000ff;">Lấy và đọc giá trị của Session trong PHP</span></h2>
+<p>Bạn hãy tạo 2 file có nội dung code bên dưới. Bạn hãy chạy làn lượt từng file trên trình duyệt và xem kết quả nhé!</p>
+<p>Lưu ý rằng các biến session không được chuyển riêng lẻ đến từng trang mới, thay vào đó chúng được truy cập từ session mà chúng ta khai báo ở đầu mỗi trang (<strong>session_start()</strong>) và các giá trị biến session được lưu trữ trong biến toàn cầu<strong> $_SESSION</strong>:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" data-enlighter-group="File session_demo1.php" data-enlighter-title="File session_demo1.php">&lt;?php
+// bắt đầu session
+session_start();
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+ 
+&lt;?php
+// Tạo biến session
+$_SESSION["user_id"] = "123456";
+$_SESSION["username"] = "tanhongit";
+echo "Các biến session đã được tạo.";
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" data-enlighter-group="file session_demo2.php" data-enlighter-title="file session_demo2.php">&lt;?php
+// bắt đầu session
+session_start();
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;?php
+    // hiển thị các biến session được tạo ở file session_demo1.php
+    echo "user_id là: " . $_SESSION["user_id"] . "&lt;br&gt;";
+    echo "username là: " . $_SESSION["username"];
+    ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>kết quả bạn sẽ thấy sau khi chạy lần lượt 2 file là thông tin của session được lưu lại:</p>
+<pre>user_id là: 123456
+username là: tanhongit</pre>
+<p>Ngoài ra để tránh gặp lỗi, các bạn hãy nhớ luôn sử dụng hàm <strong>isset()</strong> để kiểm tra xem nó có tồn tại hay không rồi hẵn láy nhé! Ví dụ về hàm <strong>isset()</strong> mình đã có làm nhiều trong các bài viết trước rồi, và mình cũng sẽ có viết riêng 1 bài nói về hàm <strong>isset()</strong> cho các bạn tham khảo nhé!</p>
+<p>Để in tất cả các biến session, sử dụng hàm <strong>print_r()</strong>:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">print_r($_SESSION);</pre>
+<h2><span style="color: #0000ff;">Chỉnh sửa, thay đổi giá trị của biến Session trong PHP</span></h2>
+<p>Để thay đổi giá trị của một session, ta chỉ cần thiết lập giá trị mới đè lên giá trị cũ của session đó.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php" data-enlighter-group="file session_demo3.php" data-enlighter-title="file session_demo3.php">&lt;?php
+// bắt đầu session
+session_start();
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;?php    
+    $_SESSION["username"] = "tanhongitcom";
+    print_r($_SESSION);
+    ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>Kết quả: <span style="color: #ff0000;"><strong>Array ( [user_id] =&gt; 123456 [username] =&gt; tanhongitcom )</strong></span></p>
+<p>Qua ví dụ dưới đây sẽ cho các bạn thấy rõ hơn về sự thay đổi giá trị của Session.</p>
+<p><span style="text-decoration: underline;"><strong>Ví dụ:</strong></span> Xuất ra số lần truy cập vào trang web thông qua session</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">&lt;?php
+session_start();
+
+if (isset($_SESSION['count'])) {
+    $_SESSION['count'] += 1;
+} else {
+    $_SESSION['count'] = 1;
+}
+$mess = "Bạn đã truy cập trang này " .  $_SESSION['count'] . " lần trong session này.";
+?&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;?php echo ($mess); ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>Sau khi bắt đầu 1 session, ta tạo 1 biến session có tên là <strong>count</strong>, tiếp tục với biểu thức điều kiện if sẽ kiểm tra số lần load vào trang này và xuất ra tổng số lần. Bạn thử load lại nhiều lần sẽ thấy giá trị của nó thay đổi lần lượt tăng thêm 1.</p>
+<h2><span style="color: #0000ff;">Các xoá, huỷ một session trong PHP</span></h2>
+<ul>
+<li>Xóa tất cả biến session đã tạo ta sử dựng hàm <strong>session_unset()</strong></li>
+<li>Xóa luôn toàn bộ session, ta sử dụng hàm<strong> session_destroy()</strong></li>
+<li>Hoặc sử dụng hàm<strong> unset()</strong> để xóa một biến.</li>
+</ul>
+<p>Trong đó hàm <strong>unset()</strong> dùng để giải phóng một biến ra khỏi bộ nhớ.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="php">// Xóa session username
+unset($_SESSION['username']);
+  
+// Xóa hết session
+session_destroy();</pre>
+<h2>BÀI TẬP</h2>
+<ol>
+<li>Xây dựng ứng dụng lưu phiên đăng nhập người dùng</li>
+<li>Xây dựng ứng dụng lưu thông tin giỏ hàng</li>
+</ol>
+<h2>Kết thúc</h2>
+<p>Vậy là qua bài viết trên mình đã giới thiệu cho các bạn về session, qua 2 bài vừa rồi nói về cookie, session là 2 khái niệm bạn sẽ phải đụng chạm rất nhiều vào các ứng dụng, các dự án sau này. Các bạn hãy áp dụng thật nhiều để nắm rõ cách sử dụng và hoạt động của nó nhé! Qua bài viết tiếp theo chúng ta sẽ qua một khái niệm mới về file và các hàm xử lý file trong PHP.</p>
+<div class="alert alert-success">Nếu các bạn cảm thấy <strong>Website TanHongIT.Com</strong> thật sự hữu ích mình mong các bạn có thể chia sẻ những bài viết đến cho cộng đồng cùng thao khảo nhé. Cảm ơn các bạn !!!</div>
+<div class="alert alert-success"><strong>Các bạn có bất kì thắc mắc cần được hỗ trợ hay yêu cầu các phần mềm, thủ thuật, khoá học,… thì cứ để lại comment bên dưới bài viết hoặc liên hệ qua <a href="https://www.facebook.com/111522570436878" target="_blank" rel="noopener noreferrer">fanpage của TanHongIT</a> để được hỗ trợ nhé! Mình sẽ cố gắng chia sẻ cho các bạn mọi thứ cần thiết nhất!</strong></div>
+<p><span style="text-decoration: underline;"><strong>Xem thêm:</strong></span></p>
+<ul>
+<li><strong><a href="https://tanhongit.com/vong-lap-foreach-trong-php/" target="_blank" rel="noopener noreferrer"> Bài 7: Vòng lặp Foreach trong PHP (Các loại vòng lặp phần 2)</a></strong></li>
+<li><strong><a title="Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP" href="https://tanhongit.com/bai-8-lenh-break-continue-va-cac-ham-function-exit-die-thuong-dung-trong-php/" target="_blank" rel="bookmark noopener noreferrer">Bài 8: lệnh Break, Continue và các hàm (function) exit, die thường dùng trong PHP</a></strong></li>
+<li>
+<p class="post-title single-post-title entry-title"><a href="https://tanhongit.com/bai-9-ham-function-trong-php/" target="_blank" rel="noopener noreferrer"><strong>Bài 9: Hàm (Function) Trong PHP</strong></a></p>
+</li>
+<li>
+<p class="post-title single-post-title entry-title"><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-10-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 10: Mảng (Array) Trong PHP</a></strong></p>
+</li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/bai-11-cac-ham-xu-ly-mang-array-trong-php/" target="_blank" rel="noopener noreferrer">Bài 11: Các hàm xử lý mảng (Array) trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-12-chuoi-string-va-cac-ham-xu-ly-chuoi-trong-php/" target="_blank" rel="noopener noreferrer">Bài 12: Chuỗi (String) Và Các Hàm Xử Lý Chuỗi Trong PHP</a></strong></li>
+<li><strong><a href="https://tanhongit.com/bai-13-phuong-thuc-get-va-post-trong-php/" target="_blank" rel="noopener noreferrer">Bài 13: Phương thức GET và POST trong PHP</a></strong></li>
+<li><strong><a class="LinkSuggestion__Link-sc-1mdih4x-2 jZPuuT" href="https://tanhongit.com/cookie-la-gi-cookie-trong-php/" target="_blank" rel="noopener noreferrer">Bài 14: Cookie là gì? Cookie trong PHP</a></strong></li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 28px; color: #ff0000;"><strong>CHÚC CÁC BẠN THÀNH CÔNG VÀ VUI VẺ</strong></span></p>
+<div style="display: none;"
+    class="kk-star-ratings kksr-valign-bottom kksr-align-right "
+    data-id="1985"
+    data-slug="">
+    <div class="kksr-stars">
+    <div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    <div class="kksr-stars-active" style="width: 120px;">
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star">
+            <div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    <div class="kksr-legend">
+            <strong class="kksr-score">5</strong>
+        <span class="kksr-muted">/</span>
+        <strong>5</strong>
+        <span class="kksr-muted">(</span>
+        <strong class="kksr-count">2</strong>
+        <span class="kksr-muted">
+            votes        </span>
+        <span class="kksr-muted">)</span>
+    </div>
+</div>
+<p>The post <a rel="nofollow" href="https://tanhongit.com/bai-15-session-trong-php/">Bài 15: Session trong PHP</a> appeared first on <a rel="nofollow" href="https://tanhongit.com">Tân Hồng IT</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://tanhongit.com/bai-15-session-trong-php/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 212/277 objects using disk
+Page Caching using disk: enhanced 
+Lazy Loading (feed)
+Minified using disk
+Database Caching 3/31 queries in 0.334 seconds using disk
+
+Served from: tanhongit.com @ 2020-03-09 18:43:45 by W3 Total Cache
+-->
