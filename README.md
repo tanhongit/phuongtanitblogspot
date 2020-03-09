@@ -9,6 +9,6 @@ Website https://tanhongit.net hiện tại đã dừng đăng bài kể từ th�
 
 Và với blog phuongtanit.blogspot.com cũng vậy, mình vẫn duy trì hoạt động sự tồn tại của nó trên internet với mục đích là lưu lại kỷ niệm.
 
-Mình cũng đã chuyển tổng thể source code trên blogspot sang html tĩnh để lưu trữ dự phòng làm kỷ niệm. Tuy nhiên vẫn còn khá nhiều lỗi trong source html static này.
+Tháng 3/2020 mình đã gỡ bỏ redirect cho phuongtanit.blogspot.com để nó được hoạt động trở lại và Mình cũng đã chuyển tổng thể source code trên blogspot sang html tĩnh để lưu trữ dự phòng làm kỷ niệm. Tuy nhiên vẫn còn khá nhiều lỗi trong source html static này.
 
 Hiện tại tanhongit đã lập một site mới có địa chỉ tại https://tanhongit.com chuyên chia sẻ kiến thức lập trình và tổng hợp một số thủ thuật về máy tính, công nghệ. Mong các bạn đón đọc. <3
