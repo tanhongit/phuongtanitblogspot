@@ -1,0 +1,5 @@
+{
+    "status": "FAIL",
+    "csrfName": "bmc_csrf_token",
+    "csrfHash": "2cf4bd00cfba262e5976bc4abb1a661c"
+}
