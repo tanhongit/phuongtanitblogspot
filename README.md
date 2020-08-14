@@ -1,14 +1,14 @@
 # phuongtanitblogspot.github.io
-Backup website phuongtanit.blogspot.com to html static site
+Backup website phuongtanit.blogspot.com to HTML static site
 
 link : https://tanhongit.github.io/phuongtanitblogspot.github.io/
 
-Blog này tạo cách đây 4 năm và là blog đầu tiên của mình có domain là https://phuongtanit.blogspot.com/, hoạt động với mục đích chia sẻ tài liệu, khoá học, phần mềm, thủ thuật máy tính,... Nhưng vào giữa năm 2018 blog đã được lưu trữ và được redirect đến tên miền https://tanhongit.net
+This blog created 4 years ago and is my first blog with the domain https://phuongtanit.blogspot.com/, working with the purpose of sharing documents, courses, software, computer tips. .. But in mid-2018 the blog was hosted and redirected to the domain https://tanhongit.net
 
-Website https://tanhongit.net hiện tại đã dừng đăng bài kể từ tháng 2/2020, nhưng mình vẫn duy trì hoạt động sự tồn tại của nó trên internet.
+Website https://tanhongit.net currently stopped posting since February 2020, but I still maintain its existence on the internet.
 
-Và với blog phuongtanit.blogspot.com cũng vậy, mình vẫn duy trì hoạt động sự tồn tại của nó trên internet với mục đích là lưu lại kỷ niệm.
+And with the blog phuongtanit.blogspot.com too, I still maintain its existence on the internet for the purpose of saving memories.
 
-Tháng 3/2020 mình đã gỡ bỏ redirect cho phuongtanit.blogspot.com để nó được hoạt động trở lại và Mình cũng đã chuyển tổng thể source code trên blogspot sang html tĩnh để lưu trữ dự phòng làm kỷ niệm. Tuy nhiên vẫn còn khá nhiều lỗi trong source html static này.
+In March 2020, I removed the redirect for phuongtanit.blogspot.com for it to work again and I have also moved the overall source code on Blogspot to static HTML for backup storage as a souvenir. However, there are still quite a few errors in this static HTML source.
 
-Hiện tại tanhongit đã lập một site mới có địa chỉ tại https://tanhongit.com chuyên chia sẻ kiến thức lập trình và tổng hợp một số thủ thuật về máy tính, công nghệ. Mong các bạn đón đọc. <3
+Currently, tanhongit has established a new site at https://tanhongit.com, specializing in sharing programming knowledge and synthesizing some computer tips and technology. Hope you welcome to read. <3
