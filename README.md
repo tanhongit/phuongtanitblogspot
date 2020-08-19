@@ -1,7 +1,7 @@
 # phuongtanitblogspot.github.io
 Backup website phuongtanit.blogspot.com to HTML static site
 
-link : https://tanhongit.github.io/phuongtanitblogspot.github.io/
+link : https://tanhongit.github.io/phuongtanitblogspot
 
 This blog created 4 years ago and is my first blog with the domain https://phuongtanit.blogspot.com/, working with the purpose of sharing documents, courses, software, computer tips. .. But in mid-2018 the blog was hosted and redirected to the domain https://tanhongit.net
 
